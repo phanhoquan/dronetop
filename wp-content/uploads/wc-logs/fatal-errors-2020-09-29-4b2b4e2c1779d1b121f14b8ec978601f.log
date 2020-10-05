@@ -1,0 +1,4 @@
+2020-09-29T17:30:33+00:00 CRITICAL syntax error, unexpected 'cms_blank_data' (T_STRING), expecting variable (T_VARIABLE) or '{' or '$' in C:\xampp\htdocs\www\dronetop1\wp-content\themes\am-logistics\woocommerce\content-product.php on line 23
+
+2020-09-29T17:32:25+00:00 CRITICAL syntax error, unexpected 'logistics_data' (T_STRING), expecting variable (T_VARIABLE) or '{' or '$' in C:\xampp\htdocs\www\dronetop1\wp-content\themes\am-logistics\woocommerce\content-product.php on line 23
+

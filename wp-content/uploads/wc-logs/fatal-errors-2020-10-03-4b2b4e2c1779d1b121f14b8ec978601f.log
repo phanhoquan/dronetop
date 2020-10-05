@@ -1,0 +1,79 @@
+2020-10-03T03:29:04+00:00 CRITICAL syntax error, unexpected 'if' (T_IF) in C:\xampp\htdocs\www\dronetop1\wp-content\themes\am-logistics\blog-templates\blog-medium.php on line 23
+
+2020-10-03T05:02:21+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF), expecting ',' or ';' in C:\xampp\htdocs\www\dronetop1\wp-content\themes\am-logistics\functions.php on line 760
+
+2020-10-03T05:02:28+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF), expecting ',' or ';' in C:\xampp\htdocs\www\dronetop1\wp-content\themes\am-logistics\functions.php on line 760
+
+2020-10-03T08:13:50+00:00 CRITICAL syntax error, unexpected '1' (T_LNUMBER), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in C:\xampp\htdocs\www\dronetop1\wp-content\themes\am-logistics\functions.php on line 449
+
+2020-10-03T08:18:11+00:00 CRITICAL Uncaught Error: Call to undefined function zo_archive_product_show_paging() in C:\xampp\htdocs\www\dronetop1\wp-content\themes\am-logistics\woocommerce\archive-product.php:83
+Stack trace:
+#0 C:\xampp\htdocs\www\dronetop1\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\www\dronetop1\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\www\dronetop1\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\www\dronetop1\wp-content\themes\am-logistics\woocommerce\archive-product.php on line 83
+
+2020-10-03T08:21:24+00:00 CRITICAL Uncaught Error: Call to undefined function woo_pagination() in C:\xampp\htdocs\www\dronetop1\wp-content\themes\am-logistics\woocommerce\archive-product.php:83
+Stack trace:
+#0 C:\xampp\htdocs\www\dronetop1\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\www\dronetop1\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\www\dronetop1\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\www\dronetop1\wp-content\themes\am-logistics\woocommerce\archive-product.php on line 83
+
+2020-10-03T10:25:25+00:00 CRITICAL Uncaught Error: Cannot use object of type WC_Product_Simple as array in C:\xampp\htdocs\www\dronetop1\wp-content\themes\am-logistics\woocommerce\content-product.php:75
+Stack trace:
+#0 C:\xampp\htdocs\www\dronetop1\wp-includes\template.php(732): require()
+#1 C:\xampp\htdocs\www\dronetop1\wp-content\plugins\woocommerce\includes\wc-core-functions.php(283): load_template('C:\\xampp\\htdocs...', false)
+#2 C:\xampp\htdocs\www\dronetop1\wp-content\themes\am-logistics\woocommerce\archive-product.php(81): wc_get_template_part('content', 'product')
+#3 C:\xampp\htdocs\www\dronetop1\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\www\dronetop1\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\www\dronetop1\index.php(17): require('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\www\dronetop1\wp-content\themes\am-logistics\woocommerce\content-product.php on line 75
+
+2020-10-03T10:39:04+00:00 CRITICAL Cannot redeclare get_the_posts_pagination() (previously declared in C:\xampp\htdocs\www\dronetop1\wp-includes\link-template.php:2718) in C:\xampp\htdocs\www\dronetop1\wp-content\themes\am-logistics\functions.php on line 803
+
+2020-10-03T10:39:09+00:00 CRITICAL Cannot redeclare get_the_posts_pagination() (previously declared in C:\xampp\htdocs\www\dronetop1\wp-includes\link-template.php:2718) in C:\xampp\htdocs\www\dronetop1\wp-content\themes\am-logistics\functions.php on line 803
+
+2020-10-03T10:47:27+00:00 CRITICAL syntax error, unexpected '2' (T_LNUMBER), expecting ',' or ')' in C:\xampp\htdocs\www\dronetop1\wp-content\themes\am-logistics\woocommerce\archive-product.php on line 85
+
+2020-10-03T10:47:37+00:00 CRITICAL syntax error, unexpected '4075' (T_LNUMBER), expecting ',' or ')' in C:\xampp\htdocs\www\dronetop1\wp-content\themes\am-logistics\woocommerce\archive-product.php on line 85
+
+2020-10-03T10:48:30+00:00 CRITICAL syntax error, unexpected 'paginate' (T_STRING), expecting ']' in C:\xampp\htdocs\www\dronetop1\wp-content\themes\am-logistics\woocommerce\archive-product.php on line 85
+
+2020-10-03T10:48:33+00:00 CRITICAL syntax error, unexpected 'paginate' (T_STRING), expecting ']' in C:\xampp\htdocs\www\dronetop1\wp-content\themes\am-logistics\woocommerce\archive-product.php on line 85
+
+2020-10-03T15:04:21+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::post_data() in C:\xampp\htdocs\www\dronetop1\wp-content\themes\am-logistics\woocommerce\content-related-product.php:56
+Stack trace:
+#0 C:\xampp\htdocs\www\dronetop1\wp-includes\template.php(732): require()
+#1 C:\xampp\htdocs\www\dronetop1\wp-content\plugins\woocommerce\includes\wc-core-functions.php(283): load_template('C:\\xampp\\htdocs...', false)
+#2 C:\xampp\htdocs\www\dronetop1\wp-content\themes\am-logistics\woocommerce\single-product\related.php(61): wc_get_template_part('content', 'related-product')
+#3 C:\xampp\htdocs\www\dronetop1\wp-content\plugins\woocommerce\includes\wc-core-functions.php(344): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\www\dronetop1\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1971): wc_get_template('single-product/...', Array)
+#5 C:\xampp\htdocs\www\dronetop1\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1934): woocommerce_related_products(Array)
+#6 C:\xampp\htdocs\www\dron in C:\xampp\htdocs\www\dronetop1\wp-content\themes\am-logistics\woocommerce\content-related-product.php on line 56
+
+2020-10-03T15:50:45+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_the_ID() in C:\xampp\htdocs\www\dronetop1\wp-content\themes\am-logistics\woocommerce\content-product.php:34
+Stack trace:
+#0 C:\xampp\htdocs\www\dronetop1\wp-includes\template.php(732): require()
+#1 C:\xampp\htdocs\www\dronetop1\wp-content\plugins\woocommerce\includes\wc-core-functions.php(283): load_template('C:\\xampp\\htdocs...', false)
+#2 C:\xampp\htdocs\www\dronetop1\wp-content\themes\am-logistics\woocommerce\archive-product.php(79): wc_get_template_part('content', 'product')
+#3 C:\xampp\htdocs\www\dronetop1\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\www\dronetop1\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\www\dronetop1\index.php(17): require('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\www\dronetop1\wp-content\themes\am-logistics\woocommerce\content-product.php on line 34
+
+2020-10-03T16:22:14+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_product_categories() in C:\xampp\htdocs\www\dronetop1\wp-content\themes\am-logistics\woocommerce\content-product.php:67
+Stack trace:
+#0 C:\xampp\htdocs\www\dronetop1\wp-includes\template.php(732): require()
+#1 C:\xampp\htdocs\www\dronetop1\wp-content\plugins\woocommerce\includes\wc-core-functions.php(283): load_template('C:\\xampp\\htdocs...', false)
+#2 C:\xampp\htdocs\www\dronetop1\wp-content\themes\am-logistics\woocommerce\archive-product.php(79): wc_get_template_part('content', 'product')
+#3 C:\xampp\htdocs\www\dronetop1\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\www\dronetop1\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\www\dronetop1\index.php(17): require('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\www\dronetop1\wp-content\themes\am-logistics\woocommerce\content-product.php on line 67
+

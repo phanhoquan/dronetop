@@ -1,0 +1,55 @@
+.template-zo_button {
+  .zo-button {
+    font-size: 14px;
+    color: $primary_color;
+    background-color: $primary_color;
+    @include transition(all .3s);
+    background-color: rgba(255, 255, 255, 1);
+    font-family: 'Taviraj', serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 700;
+    line-height: 40px;
+    box-shadow: 2px 2px 5px rgba(191, 191, 191, 1);
+    min-width: 120px;
+    width: 160px;
+    line-height: 35px;
+    border-radius: 25px;
+    display: inline-block;
+
+    &:hover {
+      color: #ffffff;
+      background: $primary_color !important;
+    }
+  }
+
+  .zo-bottom-box-shadow {
+    @include box-shadow(0px, 10px, 21px, 0px, rgba(204, 204, 204, 1));
+  }
+
+  .zo-bottom-tranform {
+    text-transform: uppercase;
+    font-size: 16px;
+    text-decoration: underline;
+    padding: 0;
+  }
+
+  .zo-button-track-it {
+    font-size: 18px;
+  }
+
+  .zo-button-no-padding {
+    padding: 0px;
+    text-decoration: underline;
+    margin-top: 15px;
+  }
+
+  .zo-botton-box-shadow {
+    @include box-shadow(0, 18px, 30px, -5px, rgba(0, 0, 0, 0.3));
+
+    @include breakpoint-max(768px) {
+      margin-top: 30px;
+      text-align: center;
+    }
+  }
+}

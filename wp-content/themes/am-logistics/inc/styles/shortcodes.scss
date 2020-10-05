@@ -1,0 +1,168 @@
+.wpb_images_carousel {
+    max-width: 100%;
+    margin: 0 auto;
+    .vc_item {
+        text-align: center;
+    }
+    &.no-padding {
+
+    }
+    .vc_images_carousel.vc_per-view-more .vc_carousel-slideline .vc_carousel-slideline-inner > .vc_item > .vc_inner {
+        padding: 0;
+        margin: 0;
+    }
+    &.overlay {
+        .vc_item, .slick-slide  {
+            img {
+                opacity: 0.6;
+            }
+            &:hover {
+                img {
+                    opacity: 1;
+                }
+            }
+        }
+
+    }
+    &.green {
+        .slick-dots li.slick-active button::before {
+            color: $primary-color ;
+        }
+    }
+    .slick-dots li.slick-active button::before {
+        color: $primary_color;
+    }
+    .vc_slide {
+        .vc_carousel-control {
+            border: 0px;
+            display: block;
+            @include background-opacity(#fff,0.5);
+            height: 70px;
+            opacity: 1;
+            width: 20px;
+            line-height: 70px;
+            margin: 0;
+            top: 50%;
+            color: #fff;
+            text-shadow: none;
+            @include transform(translate(0px, -50%));
+            @include text-shadow(none);
+            font-size: 22px;
+
+            &:hover {
+                background-color: #ffffff;
+            }
+            span {
+                display: none;
+            }
+            &.vc_left {
+                left: 0px;
+                &:before {
+                    content: "\f104";
+                    font-family: FontAwesome;
+                }
+            }
+            &.vc_right {
+                right: 0px;
+                &:before {
+                    content: "\f105";
+                    font-family: FontAwesome;
+                }
+            }
+        }
+    }
+}
+@include breakpoint-max(768px){
+    .wpb_images_carousel{
+        .vc_images_carousel{
+            width: 100% !important;
+            .vc_carousel-inner{
+                .vc_carousel-slideline{
+                    .vc_carousel-slideline-inner{
+                        .vc_item{
+                            visibility: visible;
+                            height: auto !important;
+                            float: left;
+                            /*+ .vc_item{
+                                margin-top: 50px;
+                            }*/
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .wpb_images_carousel.about-us-carousel-2{
+        .vc_images_carousel .vc_carousel-inner .vc_carousel-slideline .vc_carousel-slideline-inner .vc_item + .vc_item{
+            margin-top: 0px;
+        }
+    }
+}
+@include breakpoint-max(992px){
+    .wpb_images_carousel{
+        .zo_images_carousel-wrap{
+            text-align: center;
+            .zo_images_carousel > div + div{
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   [End] Images Carousel
+========================================================================== */
+
+
+/*ZO BUTTON*/
+.template-zo_button {
+    .zo-button i {
+        padding: 0 5px;
+    }
+}
+/*Short code Video*/
+.zo-video-custom {
+    position: relative;
+    > img {
+        padding-right: 0;
+        width: 100%;
+    }
+    a.play-button {
+        span {
+            position: absolute;
+            padding: 10px;
+            @include border-radius(100%);
+            top: calc(50% - 50px);
+            left: calc(50% - 50px);
+            @include background-opacity(#fff,0.3);
+            i{
+                font-size: 25px;
+                color: $primary_color;
+                width: 80px;
+                height: 80px;
+                background: #ffffff;
+                @include border-radius(50%);
+                line-height: 80px;
+                text-indent: 10px;
+            }
+            &:hover {
+                @include transition(all 0.3s);
+                @include background-opacity($primary_color,0.3);
+                i{
+                    background: $primary_color;
+                    color: #fff;
+                    @include transition(all 0.3s);
+                }
+            }
+        }
+    }
+    .video-close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        color: #fff;
+        &:hover {
+            color: #000;
+        }
+    }
+}

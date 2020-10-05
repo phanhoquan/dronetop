@@ -1,0 +1,132 @@
+/* ==========================================================================
+   [Start] All Style Form
+========================================================================== */
+input[type='text'],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+textarea, select {
+    font-size: 15px;
+    padding: 10px 15px;
+    border: 1px solid #ececec;
+    width: 100%;
+    @include border-radius(0);
+    line-height: normal;
+}
+
+textarea {
+    height: 200px;
+    max-width: 100%;
+}
+input[type='text']:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+    border: 1px solid $primary-color;
+}
+
+/** Contact Form 7 */
+.wpcf7-form {
+    .wpcf7-form-item {
+        margin-bottom: 24px;
+    }
+    input[type='text'],
+    input[type="password"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="date"],
+    input[type="month"],
+    input[type="time"],
+    input[type="week"],
+    input[type="number"],
+    input[type="email"],
+    input[type="url"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="color"],
+    textarea, select {
+        font-size: 14px;
+        font-weight: 400;
+        padding: 12px 15px;
+        border: 1px solid rgba($primary-color, 0.5);
+        width: 100%;
+        margin-bottom: 25px;
+        border-radius: 2px;
+    }
+    textarea {
+        height: 150px;
+    }
+    .wpcf7-submit{
+        letter-spacing: 0.1em;
+        font-size: 14px;
+        padding: 15px 25px;
+        line-height: 15px;
+        background: $primary-color;
+        color: #FFF;
+        text-transform: uppercase;
+        border-radius: 3px;
+        border: none;
+        @include transition(all ease 0.3s);
+        margin-bottom: 25px;
+        &:hover{
+            background: $secondary-color;
+        }
+    }
+    .wpcf7-form-control-wrap {
+        .wpcf7-textarea + .wpcf7-not-valid-tip{
+            bottom: -1px;
+        }
+    }
+    .wpcf7-not-valid-tip {
+        font-size: 12px;
+        position: absolute;
+        right: 10px;
+        top: -5px;
+        color: #ff3a47;
+    }
+    .wpcf7-validation-errors {
+        display: block;
+        text-align: center;
+        margin: 0;
+        border: 1px solid transparent;
+        color: #ff3a47;
+    }
+    .wpcf7-response-output {
+        text-align: center;
+        margin: 0;
+    }
+    .wpcf7-mail-sent-ok{
+        border-color: $primary-color;
+    }
+    .cms-left{
+        padding-left: 0;
+    }
+    .cms-right{
+        padding-right: 0;
+    }
+}
+
+/* ==========================================================================
+   [End] All Style Form
+========================================================================== */

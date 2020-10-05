@@ -1,0 +1,9 @@
+2020-09-30T16:10:21+00:00 CRITICAL Uncaught Error: Call to undefined function add_to_wishlist_button() in C:\xampp\htdocs\www\dronetop1\wp-content\themes\am-logistics\woocommerce\content-product.php:65
+Stack trace:
+#0 C:\xampp\htdocs\www\dronetop1\wp-includes\template.php(732): require()
+#1 C:\xampp\htdocs\www\dronetop1\wp-content\plugins\woocommerce\includes\wc-core-functions.php(283): load_template('C:\\xampp\\htdocs...', false)
+#2 C:\xampp\htdocs\www\dronetop1\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-products.php(660): wc_get_template_part('content', 'product')
+#3 C:\xampp\htdocs\www\dronetop1\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-products.php(100): WC_Shortcode_Products->product_loop()
+#4 C:\xampp\htdocs\www\dronetop1\wp-content\plugins\woocommerce\includes\class-wc-template-loader.php(299): WC_Shortcode_Products->get_content()
+#5 C:\xampp\htdocs\www\dronetop1\wp-content\plugins\woocommerce\includes\class-wc-template-loader.php(207): WC_Template_Loader::unsupported_theme_tax_arch in C:\xampp\htdocs\www\dronetop1\wp-content\themes\am-logistics\woocommerce\content-product.php on line 65
+
