@@ -32,6 +32,12 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
 $terms = get_the_terms( $product->get_id(), 'product_cat' );
+$link_product_cart = rwmb_meta('link_product_cart');
+if(!empty($link_product_cart)){
+    $link_product_cart_detail=$link_product_cart;
+}else{
+    $link_product_cart_detail="#";
+}
 ?>
 
 <div class="zo-product-item <?php echo esc_attr($col_css);?>">
@@ -74,6 +80,7 @@ $terms = get_the_terms( $product->get_id(), 'product_cat' );
         </h3>
         <?php do_action( 'woocommerce_after_shop_loop_item_title' ); ?>
          <div class="zo-product-overlays">
+         <a rel="nofollow" href="<?php echo $link_product_cart_detail;?>" class="button product_type_simple add_to_cart_button"><?php esc_html_e('Add to cart', 'am-logistics'); ?></a>
             <?php do_action( 'woocommerce_after_shop_loop_item' ); ?>
             <button class="quick-view" tabindex="-1">
             <a href="<?php echo esc_url( get_permalink( $product->get_id() ) ); ?>" title="<?php echo esc_attr( $product->get_title() ); ?>"><i class="fa fa-eye"></i></a>

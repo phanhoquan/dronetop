@@ -77,7 +77,7 @@ class CMS_StaticCss {
 	      $css_file = get_template_directory() . '/assets/css/' . $file;
 	      if(!is_file($css_file) || (!empty($logistics_data['REDUX_LAST_SAVE']) && filemtime($css_file) < $logistics_data['REDUX_LAST_SAVE'])){
 	        if (!$wp_filesystem->put_contents($css_file, $this->compile(), 0644)) {
-	          // esc_html_e('Error saving file!', 'am-logistics');
+	          esc_html_e('Error saving file!', 'am-logistics');
 	        }
 	      }else{
 	        $update = FALSE;
@@ -89,7 +89,7 @@ class CMS_StaticCss {
 	        }
 	        if($update){
 	          if (!$wp_filesystem->put_contents($css_file, $this->compile(), 0644)) {
-	            // esc_html_e('Error saving file!', 'am-logistics');
+	            esc_html_e('Error saving file!', 'am-logistics');
 	          }
 	        }
 	      }

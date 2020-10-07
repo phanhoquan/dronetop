@@ -1052,3 +1052,24 @@
         }
     }
 }
+
+.zo-product-overlays {
+    .ajax_add_to_cart {
+        display: none !important;
+    }
+}
+
+form.dgwt-wcas-pd-addtc-form,
+button.single_add_to_cart_button.button {
+    display: none !important;
+}
+
+.cart.details {
+    position: absolute;
+    bottom: 58px;
+    left: 90px;
+
+    @include breakpoint-max(992px) {
+        left: 70px;
+    }
+}

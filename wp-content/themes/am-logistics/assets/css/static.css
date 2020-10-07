@@ -8410,6 +8410,20 @@ div#zo-page-element-wrap {
       .summary.entry-summary .cart .single_add_to_cart_button::before {
         left: -5px; } }
 
+.zo-product-overlays .ajax_add_to_cart {
+  display: none !important; }
+
+form.dgwt-wcas-pd-addtc-form, button.single_add_to_cart_button.button {
+  display: none !important; }
+
+.cart.details {
+  position: absolute;
+  bottom: 58px;
+  left: 90px; }
+  @media screen and (max-width: 991px) {
+  .cart.details {
+    left: 70px; } }
+
 .zo-extra-font2 {
   font-family: 'Oswald'; }
 

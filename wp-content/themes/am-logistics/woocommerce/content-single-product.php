@@ -34,6 +34,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 	 	echo get_the_password_form();
 	 	return;
 	 }
+	 $link_product_cart = rwmb_meta('link_product_cart');
+if(!empty($link_product_cart)){
+    $link_product_cart_detail=$link_product_cart;
+}else{
+    $link_product_cart_detail="#";
+}
 ?>
 
 <div id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -64,8 +70,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 			 * @hooked WC_Structured_Data::generate_product_data() - 60
 			 */
 			do_action( 'woocommerce_single_product_summary' );
+			
 		?>
-
+		<div class="cart details">
+				<a href="<?php echo $link_product_cart_detail;?>" title="Add To Cart" class="single_add_to_cart_button button alt"><?php esc_html_e('Add to cart', 'am-logistics'); ?></a>
+		</div>
 	</div><!-- .summary -->
 
 	<?php
