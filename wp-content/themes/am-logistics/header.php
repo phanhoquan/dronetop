@@ -30,5 +30,5 @@
 	<header id="masthead" class="site-header">
 		<?php logistics_header(); ?>
 	</header>
-	<?php logistics_page_title();?>
+	<?php //logistics_page_title();?>
 	<div id="main">

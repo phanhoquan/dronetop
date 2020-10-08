@@ -80,10 +80,10 @@ if(!empty($link_product_cart)){
         </h3>
         <?php do_action( 'woocommerce_after_shop_loop_item_title' ); ?>
          <div class="zo-product-overlays">
-         <a rel="nofollow" href="<?php echo $link_product_cart_detail;?>" class="button product_type_simple add_to_cart_button" target="_blank"><?php esc_html_e('Add to cart', 'am-logistics'); ?></a>
+         <a rel="nofollow"  target="_blank" href="<?php echo $link_product_cart_detail;?>" class="button product_type_simple add_to_cart_button"><?php esc_html_e('Add to cart', 'am-logistics'); ?></a>
             <?php do_action( 'woocommerce_after_shop_loop_item' ); ?>
             <button class="quick-view" tabindex="-1">
-            <a href="<?php echo esc_url( get_permalink( $product->get_id() ) ); ?>" title="<?php echo esc_attr( $product->get_title() ); ?>"><i class="fa fa-eye"></i></a>
+            <a class="quick-view" href="<?php echo esc_url( get_permalink( $product->get_id() ) ); ?>" title="<?php echo esc_attr( $product->get_title() ); ?>"><i class="fa fa-eye"></i></a>
              <span class="tooltipp"><?php echo logistics_get_count_view(); ?><?php esc_html_e(' View', 'am-logistics'); ?></span>
             </button>
         </div>

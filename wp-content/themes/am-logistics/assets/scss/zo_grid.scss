@@ -79,12 +79,10 @@
 
         .product {
             position: relative;
-            -webkit-box-shadow: 0px 0px 0px 0px #E4E7ED, 0px 0px 0px 1px #E4E7ED;
-            box-shadow: 0px 0px 0px 0px #E4E7ED, 0px 0px 0px 1px #E4E7ED;
+            border: 1px solid #E4E7ED;
             -webkit-transition: 0.2s all;
-            transition: 0.2s all;
+            transition: 0.5s all;
             text-align: center;
-
 
             .zo-product-image {
                 span.onsale {
@@ -122,8 +120,9 @@
             }
 
             &:hover {
-                -webkit-box-shadow: 0px 0px 6px 0px #E4E7ED, 0px 0px 0px 2px $primary-color;
-                box-shadow: 0px 0px 6px 0px #E4E7ED, 0px 0px 0px 2px $primary-color;
+                transform: scale(1.01);
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+                -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
 
                 .zo-product-overlays {
 
@@ -473,7 +472,9 @@
         }
 
         &:hover {
-            border: 2px solid $primary-color;
+            // border: 2px solid $primary-color;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+            -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
 
             .zo-blog-image {
 
