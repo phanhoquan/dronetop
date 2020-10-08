@@ -247,7 +247,9 @@ jQuery(document).ready(function ($) {
   });
 
   $("body.logged-in").each(function () {
-    $("#menu-item-219 a .menu-title").text("My Page");
+    $(
+      "#menu-item-219 a .menu-title, .menu-menu-footer-container #menu-item-218 a .menu-title"
+    ).text("My Page");
   });
   $(".customer-review")
     .not(".slick-initialized")
