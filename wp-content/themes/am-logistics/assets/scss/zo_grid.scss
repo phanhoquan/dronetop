@@ -42,7 +42,8 @@
 }
 
 .woocommerce div.products,
-.single-product {
+.single-product,
+.product-menu {
     .price {
         display: flex;
         flex-direction: row-reverse;
@@ -423,7 +424,127 @@
     border-radius: 2px;
 }
 
-.customer-review {
+.list-product-menu {
+    border-top: 3px solid $primary-color;
+    position: fixed;
+    z-index: 9999;
+    top: -100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+
+    .list-menu {
+        opacity: 0;
+        -webkit-transition: 0.3s all;
+        transition: 0.3s all;
+        width: 100%;
+    }
+
+    @include breakpoint-max(992px) {
+        display: none !important;
+        opacity: 0;
+    }
+}
+
+li#menu-item-183:hover,
+li#menu-item-184:hover,
+li#menu-item-185:hover,
+li#menu-item-186:hover,
+li#menu-item-187:hover {
+    .list-product-menu {
+        top: 62px;
+
+        .list-menu {
+            opacity: 1;
+        }
+    }
+}
+
+.admin-bar {
+
+    li#menu-item-183:hover,
+    li#menu-item-184:hover,
+    li#menu-item-185:hover,
+    li#menu-item-186:hover,
+    li#menu-item-187:hover {
+        .list-product-menu {
+            top: 92px;
+
+            .list-menu {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+div.product-menu {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+    width: calc(100% - 40px);
+
+    .slick-track {
+        padding-bottom: 10px;
+    }
+
+    .item-review {
+        display: flex;
+        margin-top: 10px;
+
+        .zo-blog-image {
+            width: 120px;
+            margin-right: 10px;
+        }
+
+        .info-right {
+            width: calc(100% - 120px);
+            padding: 10px;
+            text-align: left;
+
+            h5 {
+                padding: 0;
+                font-size: 16px;
+                margin-bottom: 5px;
+
+                a {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    width: 100%;
+                    display: block;
+                }
+            }
+
+            .star-rating {
+                display: block;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .price {
+                justify-content: flex-end;
+                width: 100%;
+                text-align: left;
+            }
+        }
+    }
+
+    .slick-arrow {
+        top: calc(50% - 15px);
+        z-index: 99;
+
+        &.slick-prev {
+            right: auto;
+            left: 0;
+        }
+    }
+}
+
+.customer-review,
+.product-menu {
     margin: 0 -10px;
 
     .item-review {

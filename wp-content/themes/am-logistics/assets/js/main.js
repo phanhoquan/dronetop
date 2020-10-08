@@ -251,6 +251,61 @@ jQuery(document).ready(function ($) {
       "#menu-item-219 a .menu-title, .menu-menu-footer-container #menu-item-218 a .menu-title"
     ).text("My Page");
   });
+  // cate 1
+  $(".list-mini-drones").each(function () {
+    var html_div = $(".list-mini-drones").remove();
+    $("#menu-item-183").prepend(html_div);
+  });
+  // cate 2
+  $(".list-hobby-drones").each(function () {
+    var html_div = $(".list-hobby-drones").remove();
+    $("#menu-item-184").prepend(html_div);
+  });
+  // cate 3
+  $(".list-professional-drones").each(function () {
+    var html_div = $(".list-professional-drones").remove();
+    $("#menu-item-185").prepend(html_div);
+  });
+  // cate 4
+  $(".list-selfie-drones").each(function () {
+    var html_div = $(".list-selfie-drones").remove();
+    $("#menu-item-186").prepend(html_div);
+  });
+  // cate 5
+  $(".list-racing-drones").each(function () {
+    var html_div = $(".list-racing-drones").remove();
+    $("#menu-item-187").prepend(html_div);
+  });
+
+  $(".product-menu")
+    .not(".slick-initialized")
+    .slick({
+      dots: false,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      arrows: true,
+      responsive: [
+        {
+          breakpoint: 1400,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    });
+
   $(".customer-review")
     .not(".slick-initialized")
     .slick({

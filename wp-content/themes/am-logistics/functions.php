@@ -777,3 +777,51 @@ function new_loop_shop_per_page( $products ) {
   $products = 12;
   return $products;
 }
+
+function create_shortcode_list_product_category($cat) {
+    global $product;
+    $query_args = array(
+        'posts_per_page' => "-1",
+        'post_type' => 'product',
+        'product_cat' => $cat["category"],
+        'order' => 'DESC'
+    );
+    $the_query = new WP_Query( $query_args );
+    ob_start();
+    if ( $the_query->have_posts() ) :
+			echo '<div class="product-menu">';
+			while ( $the_query->have_posts() ) :
+			$the_query->the_post();?>
+			<?php $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');?>
+				<div class="item-review">
+                    <div class="zo-blog-image">
+                        <?php
+                            $attachment_image = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), 'full', false);
+                            $attachment_full_image = $attachment_image[0];
+                            $image_resize = zo_image_resize($attachment_full_image, 120, 120, true );
+                        ?>
+                        <a title="<?php the_title(); ?>" href="<?php the_permalink() ?>" rel="">
+                            <?php 
+                            if (has_post_thumbnail() && !post_password_required() && !is_attachment() && wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), 'full', false)){
+                                echo '<img src="'. esc_url($image_resize) .'" alt="' . get_the_title() . '">';
+                            }else{
+                                echo '<img src="' . esc_url(ZO_IMAGES . 'no-image.jpg') . '" alt="' . get_the_title() . '" />';
+                            }
+                            ?>
+                        </a>
+                    </div>
+                    <div class="info-right">
+                    <h5> 
+                         <a title="<?php the_title(); ?>" href="<?php the_permalink() ?>" rel=""><?php the_title(); ?></a>
+                    </h5>
+                    <?php do_action( 'woocommerce_after_shop_loop_item_title' ); ?>
+                    </div>
+				</div>
+		<?php endwhile;
+        echo '</div>';
+    endif;
+    $list_post = ob_get_contents();
+    ob_end_clean();
+    return $list_post;
+}
+add_shortcode('list_product_category', 'create_shortcode_list_product_category');

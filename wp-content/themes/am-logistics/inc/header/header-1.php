@@ -109,6 +109,31 @@ if (!empty($logistics_meta_box['header_logo'])) {
             </div>
             <button type="button" class=" d_btn clnau d_seach_btn toggle_seach cspoint mobile"><i class="fa fa-search"></i></button>
             <div id="zo-menu-mobile" class="collapse navbar-collapse"><span></span></div>
+            <div class="list-product-menu list-mini-drones">
+                <div class="list-list-menu">
+                <?php echo do_shortcode('[list_product_category category="mini-drones"]'); ?>
+                </div>
+            </div>
+            <div class="list-product-menu list-hobby-drones">
+                <div class="list-list-menu">
+                <?php echo do_shortcode('[list_product_category category="hobby-drones"]'); ?>
+                </div>
+            </div>
+            <div class="list-product-menu list-professional-drones">
+                <div class="list-list-menu">
+                <?php echo do_shortcode('[list_product_category category="professional-drones"]'); ?>
+                </div>
+            </div>
+            <div class="list-product-menu list-selfie-drones">
+                <div class="list-list-menu">
+                <?php echo do_shortcode('[list_product_category category="selfie-drones"]'); ?>
+                </div>
+            </div>
+            <div class="list-product-menu list-racing-drones">
+                <div class="list-list-menu">
+                <?php echo do_shortcode('[list_product_category category="racing-drones"]'); ?>
+                </div>
+            </div>
         </div>
         <?php echo do_shortcode('[wcas-search-form]'); ?>
     </div>
