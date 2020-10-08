@@ -73,7 +73,7 @@ if(!empty($link_product_cart)){
 			
 		?>
 		<div class="cart details">
-				<a href="<?php echo $link_product_cart_detail;?>" title="Add To Cart" class="single_add_to_cart_button button alt"><?php esc_html_e('Add to cart', 'am-logistics'); ?></a>
+				<a href="<?php echo $link_product_cart_detail;?>" title="Add To Cart" class="single_add_to_cart_button button alt" target="_blank"><?php esc_html_e('Add to cart', 'am-logistics'); ?></a>
 		</div>
 	</div><!-- .summary -->
 
