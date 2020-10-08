@@ -431,6 +431,7 @@
     top: -100%;
     width: 100%;
     left: 0;
+    opacity: 0;
     right: 0;
 
     .list-menu {
@@ -452,6 +453,7 @@ li#menu-item-185:hover,
 li#menu-item-186:hover,
 li#menu-item-187:hover {
     .list-product-menu {
+        opacity: 1;
         top: 62px;
 
         .list-menu {
@@ -469,6 +471,7 @@ li#menu-item-187:hover {
     li#menu-item-187:hover {
         .list-product-menu {
             top: 92px;
+            opacity: 1;
 
             .list-menu {
                 opacity: 1;
