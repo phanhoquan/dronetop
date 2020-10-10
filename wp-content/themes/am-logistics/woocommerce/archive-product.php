@@ -40,7 +40,8 @@ if(!empty($logistics_data['woo_sidebar_type'])){
 $content_size = 12;
 if($sidebar != 'none'){
     $content_size = 12 - (int)$sidebar_size;
-}
+};
+$product_cate= $wp_query->query_vars['term'];
 $content_class = 'col-xs-12 col-sm-' . $content_size . ' col-md-' . $content_size . ' col-lg-' . $content_size;
 $sidebar_class = 'col-xs-12 col-sm-' . $sidebar_size . ' col-md-' . $sidebar_size . ' col-lg-' . $sidebar_size;
 get_header( 'shop' ); ?>
@@ -63,7 +64,15 @@ get_header( 'shop' ); ?>
 
 				<div class="col-sm-12">
 					<div class="header-title-product">
-						<h3><?php esc_html_e('List all products', 'am-logistics'); ?></h3>
+						<h3>
+							<?php 
+							if($product_cate){
+								echo str_replace("-"," ",$product_cate);
+							}else{
+								esc_html_e('List all products', 'am-logistics');
+							}
+							?>
+						</h3>
 					</div>
 				</div>
 

@@ -70,13 +70,13 @@
 }
 
 .single-product p.price {
-    justify-content: flex-start;
+    justify-content: flex-end;
     margin-bottom: 10px !important;
 }
 
 .woocommerce div.products {
     .zo-product-item {
-        margin-bottom: 60px;
+        margin-bottom: 70px;
 
         .product {
             position: relative;
@@ -210,12 +210,15 @@
             .quick-view {
                 padding: 0;
 
-                a {
+                a,
+                i {
                     color: $secondary-color;
                 }
 
                 &:hover {
-                    a {
+
+                    a,
+                    i {
                         color: $primary-color;
                     }
 
@@ -483,7 +486,7 @@ li#menu-item-187:hover {
 
 div.product-menu {
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px 20px 0;
     background-color: #f4f4f4;
     box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
     -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
@@ -500,6 +503,10 @@ div.product-menu {
         .zo-blog-image {
             width: 120px;
             margin-right: 10px;
+
+            * {
+                height: 100%;
+            }
         }
 
         .info-right {
@@ -538,11 +545,20 @@ div.product-menu {
     .slick-arrow {
         top: calc(50% - 15px);
         z-index: 99;
+        width: 30px;
 
         &.slick-prev {
             right: auto;
             left: 0;
         }
+
+        &.slick-next {
+            right: 0;
+        }
+    }
+
+    .review-product {
+        color: $secondary-color;
     }
 }
 
@@ -622,6 +638,10 @@ div.product-menu {
 
         &:hover {
             border: 1px solid $secondary-color;
+
+            &::before {
+                color: $secondary-color;
+            }
         }
 
         &::before {

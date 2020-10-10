@@ -14,6 +14,7 @@
 
 #zo-header.header-style-01 .zo-header-secondary {
   width: 100% !important;
+  margin-left: -40px;
 
   ul.sub-menu {
     right: 0 !important;
@@ -21,13 +22,20 @@
   }
 }
 
-#zo-header.header-style-01 {
-  border-bottom: 3px solid $primary-color;
+@media (min-width: 992px) {
+  #zo-header.header-style-01.zo-main-header .zo-header-navigation .nav-menu>li {
+    padding: 0 8.5px;
+    @include transition(0.3s all);
+
+    &:hover {
+      background-color: #fff;
+    }
+  }
 }
 
-
 #zo-header {
-  @include breakpoint-max(1280px) {
+
+  @include breakpoint-max(1200px) {
     .zo-header-secondary {
       .d_seach_btn.toggle_seach {
         right: 15px;
@@ -53,11 +61,31 @@
 
       ul.menu-main-menu.nav-menu {
         li a {
-          font-size: 12px;
+          font-size: 15px;
         }
 
         &>li {
           padding-right: 15px;
+        }
+      }
+    }
+  }
+
+  @include breakpoint-max(1170px) {
+    .zo-header-secondary {
+      ul.menu-main-menu.nav-menu {
+        li a {
+          font-size: 13.5px;
+        }
+      }
+    }
+  }
+
+  @include breakpoint-max(1040px) {
+    .zo-header-secondary {
+      ul.menu-main-menu.nav-menu {
+        li a {
+          font-size: 12.5px;
         }
       }
     }
@@ -324,7 +352,7 @@
 .d_btn.clnau.toggle_seach {
   position: absolute;
   top: 10px;
-  right: -20px;
+  right: 15px;
   width: 33px;
   padding: 0;
   height: 33px;

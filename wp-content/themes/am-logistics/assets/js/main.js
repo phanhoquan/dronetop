@@ -251,6 +251,10 @@ jQuery(document).ready(function ($) {
       "#menu-item-219 a .menu-title, .menu-menu-footer-container #menu-item-218 a .menu-title"
     ).text("My Page");
   });
+  $(".additional_information_tab").each(function () {
+    $(this).find("a").text("SPECIFICATION");
+  });
+
   // cate 1
   $(".list-mini-drones").each(function () {
     var html_div = $(".list-mini-drones").remove();

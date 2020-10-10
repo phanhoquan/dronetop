@@ -781,11 +781,14 @@ function new_loop_shop_per_page( $products ) {
 function create_shortcode_list_product_category($cat) {
     global $product;
     $query_args = array(
-        'posts_per_page' => "-1",
         'post_type' => 'product',
+        'posts_per_page' => -1,
         'product_cat' => $cat["category"],
-        'order' => 'DESC'
+        'orderby'        => 'meta_value_num',
+        'order'          => 'desc',
+        'meta_key'       => '_wc_average_rating'
     );
+
     $the_query = new WP_Query( $query_args );
     ob_start();
     if ( $the_query->have_posts() ) :
@@ -811,10 +814,13 @@ function create_shortcode_list_product_category($cat) {
                         </a>
                     </div>
                     <div class="info-right">
-                    <h5> 
-                         <a title="<?php the_title(); ?>" href="<?php the_permalink() ?>" rel=""><?php the_title(); ?></a>
-                    </h5>
-                    <?php do_action( 'woocommerce_after_shop_loop_item_title' ); ?>
+                        <h5> 
+                            <a title="<?php the_title(); ?>" href="<?php the_permalink() ?>" rel=""><?php the_title(); ?></a>
+                        </h5>
+                        <?php do_action( 'woocommerce_after_shop_loop_item_title' ); ?>
+                        <div class="review-product">
+                            <span><?php esc_html_e('View: ', 'am-logistics'); ?><?php echo logistics_get_count_view(); ?>/<?php esc_html_e('Comments: ', 'am-logistics'); ?> <?php echo comments_number('0','1','%');?></span>
+                        </div>
                     </div>
 				</div>
 		<?php endwhile;
@@ -825,3 +831,39 @@ function create_shortcode_list_product_category($cat) {
     return $list_post;
 }
 add_shortcode('list_product_category', 'create_shortcode_list_product_category');
+
+
+// Woocommerce rating stars always
+add_filter('woocommerce_product_get_rating_html', 'your_get_rating_html', 10, 2);
+
+function your_get_rating_html($rating_html, $rating) {
+  if ( $rating > 0 ) {
+    $title = sprintf( __( 'Rated %s out of 5', 'woocommerce' ), $rating );
+  } else {
+    $title = 'Not yet rated';
+    $rating = 0;
+  }
+
+  $rating_html  = '<div class="star-rating" title="' . $title . '">';
+  $rating_html .= '<span style="width:' . ( ( $rating / 5 ) * 100 ) . '%"><strong class="rating">' . $rating . '</strong> ' . __( 'out of 5', 'woocommerce' ) . '</span>';
+  $rating_html .= '</div>';
+  return $rating_html;
+}
+add_filter( 'wc_product_sku_enabled', '__return_false' );
+
+function custom_remove_all_quantity_fields( $return, $product ) {return true;}
+add_filter( 'woocommerce_is_sold_individually','custom_remove_all_quantity_fields', 10, 2 );
+
+
+add_filter( 'woocommerce_catalog_orderby', 'options_rename_default_sorting_options' );
+ 
+function options_rename_default_sorting_options( $options ){
+    unset( $options[ 'popularity' ] ); // remove
+	$options[ 'review_count' ] = 'Sort by popularity';
+	return $options;
+}
+
+function wpum_custom_redirect_to_homepage( $url ) {
+    return home_url();
+}
+add_filter( 'wpum_get_login_redirect', 'wpum_custom_redirect_to_homepage' );

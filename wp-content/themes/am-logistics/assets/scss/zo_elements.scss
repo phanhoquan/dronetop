@@ -537,3 +537,45 @@ body.home {
     }
   }
 }
+
+.slick-next:before {
+  content: "\f105" !important;
+  font-size: 25px !important;
+}
+
+.slick-prev::before {
+  content: "\f104" !important;
+  font-size: 25px !important;
+}
+
+option {
+  padding: 10px !important;
+  min-height: 2em;
+}
+
+.entry-meta {
+  display: none !important;
+}
+
+.woocommerce-MyAccount-navigation-link {
+
+  &.woocommerce-MyAccount-navigation-link--orders,
+  &.woocommerce-MyAccount-navigation-link--downloads,
+  &.woocommerce-MyAccount-navigation-link--edit-address,
+  &.woocommerce-MyAccount-navigation-link--edit-account,
+  &.woocommerce-MyAccount-navigation-link--customer-logout {
+    display: none !important;
+  }
+}
+
+a.btn.btn-logout {
+  padding: 10px 20px;
+  background: #000;
+  border-radius: 4px;
+  color: #fff;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
