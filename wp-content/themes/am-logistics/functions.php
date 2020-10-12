@@ -684,7 +684,7 @@ function add_percentage_to_sale_badge( $html, $post, $product ) {
             // Only on sale variations
             if( $prices['regular_price'][$key] !== $price ){
                 // Calculate and set in the array the percentage for each variation on sale
-                $percentages[] = round(100 - ($prices['sale_price'][$key] / $prices['regular_price'][$key] * 100));
+                $percentages[] = round(100 - ($prices['sale_price'][$key] / $prices['regular_price'][$key] * 100),2);
             }
         }
         // We keep the highest value
@@ -692,7 +692,8 @@ function add_percentage_to_sale_badge( $html, $post, $product ) {
     } else {
         $regular_price = (float) $product->get_regular_price();
         $sale_price    = (float) $product->get_sale_price();
-        $percentage    = round(100 - ($sale_price / $regular_price * 100)) . '%';
+        $percentage    = round(100 - ($sale_price / $regular_price * 100),2) . '%';
+        
     }
     return '<span class="onsale">' . esc_html__( 'SALE', 'woocommerce' ) . ' ' . $percentage . '</span>';
 }
@@ -873,3 +874,14 @@ function admin_style() {
     wp_enqueue_style('admin-styles-custom-css', get_template_directory_uri().'/assets/css/admin.css');
   }
   add_action('admin_enqueue_scripts', 'admin_style');
+
+  add_filter( 'wp_nav_menu_items', 'wti_loginout_menu_link', 10, 2 );
+
+function wti_loginout_menu_link( $items, $args ) {
+   if ($args->theme_location == 'primary') {
+      if (is_user_logged_in()) {
+         $items .= '<li class="right menu-logout"><a href="'. wp_logout_url( home_url() ) .'">'. __("Log Out") .'</a></li>';
+      }
+   }
+   return $items;
+}

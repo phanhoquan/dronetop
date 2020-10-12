@@ -260,6 +260,11 @@ jQuery(document).ready(function ($) {
     var html_div = $(".list-mini-drones").remove();
     $("#menu-item-183").prepend(html_div);
   });
+
+  $(".right.menu-logout").each(function () {
+    var html_div = $(".right.menu-logout").remove();
+    $("#menu-item-182 ul.sub-menu").append(html_div);
+  });
   // cate 2
   $(".list-hobby-drones").each(function () {
     var html_div = $(".list-hobby-drones").remove();

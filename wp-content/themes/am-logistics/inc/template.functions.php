@@ -52,7 +52,7 @@ function logistics_footer_social() {
     foreach ($socials as $social => $key) {
         if (isset($logistics_data[$social]) && $key) {
             $result.= '<li class="' . $social . '">';
-            $result.= '<a href="' . $logistics_data[$social] . '" title="' . $social . '">';
+            $result.= '<a href="' . $logistics_data[$social] . '" title="' . $social . '" target="_blank">';
             $result.= '<i class="fa fa-' . $social . '"></i>';
             $result.= '</a></li>';
         }

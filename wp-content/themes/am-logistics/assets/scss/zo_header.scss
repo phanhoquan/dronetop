@@ -1,3 +1,14 @@
+@font-face {
+  font-family: star;
+  src: url(../fonts/star.eot);
+  src:
+    url(../fonts/star.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/star.woff) format("woff"),
+    url(../fonts/star.ttf) format("truetype"),
+    url(../fonts/star.svg#star) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
 #masthead.site-header {
   background-color: transparent !important;
   z-index: 9999;
@@ -31,6 +42,11 @@
       background-color: #fff;
     }
   }
+}
+
+#zo-header.header-style-01 .zo-header-secondary ul.sub-menu {
+  border-top: transparent;
+  top: calc(100% + 1px);
 }
 
 #zo-header {
