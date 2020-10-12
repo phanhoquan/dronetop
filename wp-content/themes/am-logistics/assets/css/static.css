@@ -7149,6 +7149,9 @@ a.btn.btn-logout {
   a.btn.btn-logout:hover {
     color: #d10024; }
 
+.stock.in-stock {
+  display: none !important; }
+
 .zo-grid-filter .zo-filter-category {
   margin: 0 0 30px;
   padding: 0;

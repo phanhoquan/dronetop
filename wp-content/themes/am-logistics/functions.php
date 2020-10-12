@@ -867,3 +867,9 @@ function wpum_custom_redirect_to_homepage( $url ) {
     return home_url();
 }
 add_filter( 'wpum_get_login_redirect', 'wpum_custom_redirect_to_homepage' );
+
+// Update CSS within in Admin
+function admin_style() {
+    wp_enqueue_style('admin-styles-custom-css', get_template_directory_uri().'/assets/css/admin.css');
+  }
+  add_action('admin_enqueue_scripts', 'admin_style');
