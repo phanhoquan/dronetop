@@ -225,3 +225,30 @@ table.compare-list td img {
         font-size: 12px;
     }
 }
+
+table.compare-list ul {
+    text-align: left;
+}
+table.compare-list ins {
+    text-decoration: none;
+}
+table.compare-list ins span.amount {
+    color: #d10024;
+    font-weight: bold;
+}
+table.compare-list .amount {
+    color: #000000;
+    font-size: 16px;
+}
+
+table.compare-list del .amount {
+    color: #000;
+}
+table.compare-list .title td {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 0px;
+    color: #000;
+}
