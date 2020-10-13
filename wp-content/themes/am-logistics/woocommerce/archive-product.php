@@ -41,7 +41,10 @@ $content_size = 12;
 if($sidebar != 'none'){
     $content_size = 12 - (int)$sidebar_size;
 };
-$product_cate= $wp_query->query_vars['term'];
+$product_cate="";
+if($wp_query){
+	$product_cate= $wp_query->query_vars['term'];
+}
 $content_class = 'col-xs-12 col-sm-' . $content_size . ' col-md-' . $content_size . ' col-lg-' . $content_size;
 $sidebar_class = 'col-xs-12 col-sm-' . $sidebar_size . ' col-md-' . $sidebar_size . ' col-lg-' . $sidebar_size;
 get_header( 'shop' ); ?>
