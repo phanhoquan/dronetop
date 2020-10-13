@@ -7272,14 +7272,26 @@ a.btn.btn-logout {
   justify-content: center; }
   .woocommerce div.products .price del, .single-product .price del, .product-menu .price del {
     margin-left: 5px; }
-  .woocommerce div.products ins, .single-product ins, .product-menu ins {
+  .woocommerce div.products ins, .single-product ins, .product-menu ins, .woocommerce div.products bdi, .single-product bdi, .product-menu bdi {
     text-decoration: none; }
-  .woocommerce div.products ins .amount, .single-product ins .amount, .product-menu ins .amount {
+  .woocommerce div.products ins .amount, .single-product ins .amount, .product-menu ins .amount, .woocommerce div.products bdi .amount, .single-product bdi .amount, .product-menu bdi .amount {
+    color: #d10024;
+    font-weight: bold;
+    font-size: 18px; }
+  .woocommerce div.products ins .amount bdi, .single-product ins .amount bdi, .product-menu ins .amount bdi, .woocommerce div.products bdi .amount bdi, .single-product bdi .amount bdi, .product-menu bdi .amount bdi {
+    color: #d10024;
+    font-weight: bold;
+    font-size: 18px; }
+  .woocommerce div.products .amount bdi, .single-product .amount bdi, .product-menu .amount bdi {
     color: #d10024;
     font-weight: bold;
     font-size: 18px; }
   .woocommerce div.products del .amount, .single-product del .amount, .product-menu del .amount {
     color: #000; }
+  .woocommerce div.products del .amount bdi, .single-product del .amount bdi, .product-menu del .amount bdi {
+    color: #888;
+    font-weight: normal;
+    font-size: 14px; }
 
 .single-product p.price {
   justify-content: flex-end;
