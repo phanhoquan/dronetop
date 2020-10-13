@@ -34,7 +34,7 @@ if ( ! empty( $tabs ) ) : ?>
 		<ul class="tabs wc-tabs" role="tablist">
 			<?php foreach ( $tabs as $key => $tab ) : ?>
 				<li class="<?php echo esc_attr( $key ); ?>_tab" id="tab-title-<?php echo esc_attr( $key ); ?>" role="tab" aria-controls="tab-<?php echo esc_attr( $key ); ?>">
-					<a href="#tab-<?php echo esc_attr( $key ); ?>"><?php echo apply_filters( 'woocommerce_product_' . $key . '_tab_title', esc_html( $tab['title'] ), $key ); ?></a>
+					<a href="#tab-<?php echo esc_attr( $key ); ?>"><?php echo str_replace( 'Reviews', 'Comments', apply_filters( 'woocommerce_product_' . $key . '_tab_title', esc_html( $tab['title'] ), $key )); ?></a>
 				</li>
 			<?php endforeach; ?>
 		</ul>

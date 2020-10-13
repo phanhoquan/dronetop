@@ -7148,7 +7148,24 @@ option {
 .entry-meta {
   display: none !important; }
 
-.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--orders, .woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--downloads, .woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--edit-address, .woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--edit-account, .woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--customer-logout {
+body.woocommerce-edit-account .woocommerce {
+  margin-bottom: 40px; }
+
+.edit-account fieldset legend {
+  padding-bottom: 10px;
+  max-width: 100%;
+  padding-top: 20px;
+  font-weight: 700; }
+
+div.wpcf7 .ajax-loader {
+  position: absolute;
+  right: 20px;
+  margin-top: 14px; }
+
+.woocommerce-EditAccountForm.edit-account p label {
+  text-transform: capitalize !important; }
+
+.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--orders, .woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--downloads, .woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--edit-address, .woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--customer-logout {
   display: none !important; }
 
 a.btn.btn-logout {
@@ -7201,6 +7218,10 @@ a.btn.btn-logout {
     top: 0;
     position: absolute;
     left: 0; }
+
+@media screen and (min-width: 992px) {
+    #colorbox.yith_woocompare_colorbox {
+      position: fixed !important; } }
 
 .zo-grid-filter .zo-filter-category {
   margin: 0 0 30px;

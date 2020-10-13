@@ -29,9 +29,9 @@ if ( ! comments_open() ) {
 	<div id="comments">
 		<h2 class="woocommerce-Reviews-title"><?php
 			if ( get_option( 'woocommerce_enable_review_rating' ) === 'yes' && ( $count = $product->get_review_count() ) )
-				printf( _n( '%s review for %s%s%s', '%s reviews for %s%s%s', $count, 'am-logistics' ), $count, '<span>', get_the_title(), '</span>' );
+				printf( _n( '%s review for %s%s%s', '%s comment for %s%s%s', $count, 'am-logistics' ), $count, '<span>', get_the_title(), '</span>' );
 			else
-				esc_html_e( 'Reviews', 'am-logistics' );
+				esc_html_e( 'Comments', 'am-logistics' );
 		?></h2>
 
 		<?php if ( have_comments() ) : ?>
@@ -52,7 +52,7 @@ if ( ! comments_open() ) {
 
 		<?php else : ?>
 
-			<p class="woocommerce-noreviews"><?php esc_html_e( 'There are no reviews yet.', 'am-logistics' ); ?></p>
+			<p class="woocommerce-noreviews"><?php esc_html_e( 'There are no comments yet.', 'am-logistics' ); ?></p>
 
 		<?php endif; ?>
 	</div>
@@ -65,7 +65,7 @@ if ( ! comments_open() ) {
 					$commenter = wp_get_current_commenter();
 
 					$comment_form = array(
-						'title_reply'          => have_comments() ? esc_html__( 'Add a review', 'am-logistics' ) : sprintf( __( 'Be the first to review &ldquo;%s&rdquo;', 'am-logistics' ), get_the_title() ),
+						'title_reply'          => have_comments() ? esc_html__( 'Add a comment', 'am-logistics' ) : sprintf( __( 'Be the first to review &ldquo;%s&rdquo;', 'am-logistics' ), get_the_title() ),
 						'title_reply_to'       => __( 'Leave a Reply to %s', 'am-logistics' ),
 						'comment_notes_after'  => '',
 						'fields'               => array(
@@ -94,7 +94,7 @@ if ( ! comments_open() ) {
 						</select></p>';
 					}
 
-					$comment_form['comment_field'] .= '<p class="comment-form-comment"><label for="comment">' . esc_html__( 'Your Review', 'am-logistics' ) . ' <span class="required">*</span></label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" required></textarea></p>';
+					$comment_form['comment_field'] .= '<p class="comment-form-comment"><label for="comment">' . esc_html__( 'Your Comment', 'am-logistics' ) . ' <span class="required">*</span></label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" required></textarea></p>';
 
 					comment_form( apply_filters( 'woocommerce_product_review_comment_form_args', $comment_form ) );
 				?>

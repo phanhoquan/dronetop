@@ -25,7 +25,7 @@ $verified = wc_review_is_from_verified_owner( $comment->comment_ID );
 
 if ( '0' === $comment->comment_approved ) { ?>
 
-	<p class="meta"><em class="woocommerce-review__awaiting-approval"><?php esc_attr_e( 'Your review is awaiting approval', 'am-logistics' ); ?></em></p>
+	<p class="meta"><em class="woocommerce-review__awaiting-approval"><?php esc_attr_e( 'Your comment is awaiting approval', 'am-logistics' ); ?></em></p>
 
 <?php } else { ?>
 
