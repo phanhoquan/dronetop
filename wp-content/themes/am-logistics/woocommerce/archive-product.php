@@ -42,8 +42,9 @@ if($sidebar != 'none'){
     $content_size = 12 - (int)$sidebar_size;
 };
 $product_cate="";
-if($wp_query &&$wp_query->query_vars){
+if($wp_query &&$wp_query->query_vars&&!empty($wp_query->query_vars['term'])){
 	// $product_cate= $wp_query->query_vars['term'];
+	$product_cate= $wp_query->query_vars['term'];
 	echo "<pre>";
 	print_r($wp_query->query_vars);
 	echo "</pre>";
