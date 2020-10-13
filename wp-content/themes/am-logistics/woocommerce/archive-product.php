@@ -43,7 +43,8 @@ if($sidebar != 'none'){
 };
 $product_cate="";
 if($wp_query &&$wp_query->query_vars&&$wp_query->query_vars['term']){
-	$product_cate= $wp_query->query_vars['term'];
+	// $product_cate= $wp_query->query_vars['term'];
+	print_r($wp_query->query_vars);
 }
 $content_class = 'col-xs-12 col-sm-' . $content_size . ' col-md-' . $content_size . ' col-lg-' . $content_size;
 $sidebar_class = 'col-xs-12 col-sm-' . $sidebar_size . ' col-md-' . $sidebar_size . ' col-lg-' . $sidebar_size;
