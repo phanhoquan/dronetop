@@ -7184,7 +7184,8 @@ a.btn.btn-logout {
   top: 0 !important; }
 
 .right.menu-logout {
-  display: none !important; }
+  display: none !important;
+  width: 100%; }
 
 .sub-menu .right.menu-logout {
   display: block !important; }
