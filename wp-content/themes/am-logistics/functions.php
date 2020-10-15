@@ -860,7 +860,7 @@ add_filter( 'woocommerce_catalog_orderby', 'options_rename_default_sorting_optio
  
 function options_rename_default_sorting_options( $options ){
     unset( $options[ 'popularity' ] ); // remove
-	$options[ 'review_count' ] = 'Sort by popularity';
+	$options[ 'post_views' ] = 'Sort by popularity';
 	return $options;
 }
 
