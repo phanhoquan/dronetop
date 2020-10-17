@@ -57,6 +57,7 @@ jQuery(document).ready(function ($) {
 
     /* page loading. */
     zo_page_loading();
+    $("#wpb_wiz_gallery").addClass("open");
   });
 
   if ($(window).outerWidth() > 992 && $(".sticky-sidebar").length) {
@@ -250,10 +251,6 @@ jQuery(document).ready(function ($) {
     $(
       "#menu-item-219 a .menu-title, .menu-menu-footer-container #menu-item-218 a .menu-title"
     ).text("My Page");
-    $("#menu-item-218 a, #menu-item-219 a ").attr(
-      "href",
-      window.origin + "/my-account/edit-account"
-    );
     $("#menu-item-212, #menu-item-209").remove();
   });
   $(".additional_information_tab").each(function () {
@@ -295,7 +292,6 @@ jQuery(document).ready(function ($) {
   });
 
   $("#cboxOverlay, button#cboxClose, #cboxContent").click(function () {
-    console.log("Sssssssss");
     $("body").removeClass("ovl-hide");
   });
 
@@ -351,6 +347,28 @@ jQuery(document).ready(function ($) {
           breakpoint: 767,
           settings: {
             slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    });
+
+  $("#wpb_wiz_gallery")
+    .not(".slick-initialized")
+    .slick({
+      dots: false,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      arrows: true,
+      responsive: [
+        {
+          breakpoint: 1400,
+          settings: {
+            slidesToShow: 3,
             slidesToScroll: 1,
           },
         },

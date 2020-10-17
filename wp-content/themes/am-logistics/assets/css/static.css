@@ -7244,6 +7244,66 @@ a.btn.btn-logout {
   .image-avatar img {
     border-radius: 50%; }
 
+.fancybox-caption.fancybox-caption--separate {
+  display: none !important; }
+
+.fancybox-button.fancybox-button--arrow_right svg {
+  right: 30px !important; }
+
+.fancybox-button.fancybox-button--arrow_left svg {
+  left: -30px !important; }
+
+.woocommerce-product-gallery__wrapper img {
+  border: 1px solid #ccc;
+  display: block; }
+  .woocommerce-product-gallery__wrapper > .woocommerce-product-gallery__image {
+    height: 300px !important;
+    margin-bottom: 10px; }
+  .woocommerce-product-gallery__wrapper > .woocommerce-product-gallery__image * {
+    height: 300px !important;
+    width: 100% !important;
+    margin: 0; }
+  @media screen and (max-width: 767px) {
+    .woocommerce-product-gallery__wrapper > .woocommerce-product-gallery__image {
+      height: 250px !important; }
+      .woocommerce-product-gallery__wrapper > .woocommerce-product-gallery__image * {
+        height: 250px !important; } }
+
+#wpb_wiz_gallery {
+  display: flex;
+  opacity: 0;
+  visibility: hidden; }
+  #wpb_wiz_gallery.open {
+    opacity: 1;
+    visibility: visible; }
+  #wpb_wiz_gallery .slick-arrow {
+    left: 5px;
+    z-index: 99;
+    background-color: #000;
+    margin-top: -15px; }
+  #wpb_wiz_gallery .slick-arrow::before {
+    opacity: 1;
+    line-height: 19px;
+    font-size: 18px !important; }
+  #wpb_wiz_gallery .slick-next {
+    left: auto;
+    right: 5px; }
+  #wpb_wiz_gallery .slick-list.draggable {
+    width: calc(100% + 5px) !important;
+    margin-left: -3px; }
+  @media screen and (max-width: 767px) {
+    #wpb_wiz_gallery .slick-list.draggable {
+      width: calc(100% + 10px) !important;
+      margin-right: -3px !important; } }
+  #wpb_wiz_gallery .woocommerce-product-gallery__image {
+    margin: 0 3px; }
+
+.fancybox-button.fancybox-button--close {
+  top: 50px;
+  right: 5px; }
+  .fancybox-button.fancybox-button--close svg {
+    margin: 0; }
+
 .zo-grid-filter .zo-filter-category {
   margin: 0 0 30px;
   padding: 0;
@@ -8559,12 +8619,6 @@ form.dgwt-wcas-pd-addtc-form, button.single_add_to_cart_button.button {
     width: calc(100% - 13px); }
   .main-single-content .yith_magnifier_zoom_wrap .woocommerce-main-image {
     width: 100%; }
-
-.woocommerce div.product div.images {
-  width: calc(48% + 13px) !important; }
-  @media screen and (max-width: 767px) {
-  .woocommerce div.product div.images {
-    width: calc(100% + 13px) !important; } }
 
 .zo-extra-font2 {
   font-family: 'Oswald'; }

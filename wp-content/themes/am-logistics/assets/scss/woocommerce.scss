@@ -1089,11 +1089,3 @@ button.single_add_to_cart_button.button {
         }
     }
 }
-
-.woocommerce div.product div.images {
-    width: calc(48% + 13px) !important;
-
-    @include breakpoint-max(768px) {
-        width: calc(100% + 13px) !important;
-    }
-}
