@@ -27,7 +27,7 @@ do_action( 'woocommerce_before_edit_account_form' ); ?>
 	<?php do_action( 'woocommerce_edit_account_form_start' ); ?>
 	<div class="image-avatar">
 		<?php
-			get_currentuserinfo();
+			wp_get_current_user();
 			echo get_avatar( $current_user->ID, 100 );
 		?>
 	</div>
