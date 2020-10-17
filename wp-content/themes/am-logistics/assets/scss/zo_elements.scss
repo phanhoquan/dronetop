@@ -807,6 +807,10 @@ a.btn.btn-logout {
 
   .woocommerce-product-gallery__image {
     margin: 0 3px;
+
+    &.slick-slide.slick-active.active img {
+      border-color: #000;
+    }
   }
 }
 

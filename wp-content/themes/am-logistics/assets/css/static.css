@@ -7314,6 +7314,8 @@ a.btn.btn-logout {
       margin-right: -3px !important; } }
   #wpb_wiz_gallery .woocommerce-product-gallery__image {
     margin: 0 3px; }
+  #wpb_wiz_gallery .woocommerce-product-gallery__image.slick-slide.slick-active.active img {
+    border-color: #000; }
 
 .fancybox-button.fancybox-button--close {
   top: 50px;
