@@ -781,7 +781,6 @@ a.btn.btn-logout {
     left: 5px;
     z-index: 99;
     background-color: #000;
-    margin-top: -15px;
 
     &::before {
       opacity: 1;
@@ -878,4 +877,5 @@ a.btn.btn-logout {
   margin-left: -15%;
   top: 10px;
   position: relative;
+  display: none;
 }
