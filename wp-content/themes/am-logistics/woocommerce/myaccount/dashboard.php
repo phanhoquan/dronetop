@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-$user = wp_get_current_user();
+$user = get_currentuserinfo();
 
 do_action( 'woocommerce_before_edit_account_form' ); ?>
 
