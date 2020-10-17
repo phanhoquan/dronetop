@@ -303,7 +303,7 @@ jQuery(document).ready(function ($) {
       speed: 500,
       slidesToShow: 4,
       slidesToScroll: 4,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 3000,
       arrows: true,
       responsive: [
@@ -361,7 +361,7 @@ jQuery(document).ready(function ($) {
       speed: 500,
       slidesToShow: 4,
       slidesToScroll: 4,
-      autoplay: false,
+      autoplay: true,
       autoplaySpeed: 3000,
       arrows: true,
       responsive: [
@@ -374,4 +374,16 @@ jQuery(document).ready(function ($) {
         },
       ],
     });
+  $(".input-text.wp-user-profile-avatar-image").change(function () {
+    $("#wp_user_profile_avatar_update_profile").click();
+    $(".loadding").show();
+    setInterval(function () {
+      var hClass = $("#upload_avatar_responce").hasClass(
+        "wp-user-profile-avatar-success"
+      );
+      if (hClass) {
+        location.reload(true);
+      }
+    }, 1000);
+  });
 });

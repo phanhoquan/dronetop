@@ -32,6 +32,7 @@ do_action( 'woocommerce_before_edit_account_form' ); ?>
 			wp_get_current_user();
 			echo get_avatar( $current_user->ID, 100 );
 		?>
+			<img class="loadding" src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/loader.gif');?>"/>
 	</div>
 	
 	<p class="woocommerce-form-row woocommerce-form-row--first form-row form-row-first">
@@ -78,4 +79,4 @@ do_action( 'woocommerce_before_edit_account_form' ); ?>
 	<?php do_action( 'woocommerce_edit_account_form_end' ); ?>
 </form>
 
-<?php do_action( 'woocommerce_after_edit_account_form' ); ?>
+<?php do_action( 'woocommerce_after_edit_account_form' );	echo do_shortcode('[user_profile_avatar_upload]'); ?>

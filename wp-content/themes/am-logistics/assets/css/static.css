@@ -7240,9 +7240,26 @@ a.btn.btn-logout {
 
 .image-avatar {
   margin-bottom: 20px;
-  text-align: center; }
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  margin-bottom: 40px; }
   .image-avatar img {
     border-radius: 50%; }
+  .image-avatar .loadding {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: none;
+    transform: translate(-50%, -50%); }
 
 .fancybox-caption.fancybox-caption--separate {
   display: none !important; }
@@ -7303,6 +7320,42 @@ a.btn.btn-logout {
   right: 5px; }
   .fancybox-button.fancybox-button--close svg {
     margin: 0; }
+
+.wp_user_profile_avatar_preview, .wp_user_profile_avatar_thumbnail, .regular-text code {
+  display: none !important; }
+
+.update-user-profile-avatar td, .update-user-profile-avatar table {
+  border: 0; }
+  .update-user-profile-avatar td p, .update-user-profile-avatar table p {
+    margin: 0; }
+  .update-user-profile-avatar tbody p {
+    display: none !important;
+    margin: 0; }
+  .update-user-profile-avatar tbody p#wp_user_profile_avatar_add_button_existing {
+    display: block !important; }
+
+.wp-user-profile-avatar-upload {
+  position: absolute;
+  top: 94px;
+  left: 50%;
+  cursor: pointer; }
+  .wp-user-profile-avatar-upload .input-text.wp-user-profile-avatar-image {
+    width: 100px;
+    height: 100px;
+    top: 30px;
+    position: absolute;
+    left: -49px;
+    opacity: 0;
+    cursor: pointer; }
+
+#wp_user_profile_avatar_update_profile {
+  opacity: 0;
+  visibility: hidden; }
+
+.wp-user-profile-avatar-success {
+  margin-left: -15%;
+  top: 10px;
+  position: relative; }
 
 .zo-grid-filter .zo-filter-category {
   margin: 0 0 30px;
