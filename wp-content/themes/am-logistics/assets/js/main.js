@@ -250,6 +250,11 @@ jQuery(document).ready(function ($) {
     $(
       "#menu-item-219 a .menu-title, .menu-menu-footer-container #menu-item-218 a .menu-title"
     ).text("My Page");
+    $("#menu-item-218 a, #menu-item-219 a ").attr(
+      "href",
+      window.origin + "/my-account/edit-account"
+    );
+    $("#menu-item-212, #menu-item-209").remove();
   });
   $(".additional_information_tab").each(function () {
     $(this).find("a").text("SPECIFICATION");
@@ -284,6 +289,14 @@ jQuery(document).ready(function ($) {
   $(".list-racing-drones").each(function () {
     var html_div = $(".list-racing-drones").remove();
     $("#menu-item-187").prepend(html_div);
+  });
+  $(".compare.button").click(function () {
+    $("body").addClass("ovl-hide");
+  });
+
+  $("#cboxOverlay, button#cboxClose, #cboxContent").click(function () {
+    console.log("Sssssssss");
+    $("body").removeClass("ovl-hide");
   });
 
   $(".product-menu")

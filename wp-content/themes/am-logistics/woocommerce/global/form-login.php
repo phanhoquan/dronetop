@@ -52,7 +52,7 @@ if ( is_user_logged_in() ) {
 		</label>
 	</p>
 	<p class="lost_password">
-		<a href="<?php echo esc_url( wp_lostpassword_url() ); ?>"><?php _e( 'Lost your password?', 'am-logistics' ); ?></a>
+		<a href="<?php echo esc_url( wp_lostpassword_url() ); ?>"><?php _e( 'Forgot password?', 'am-logistics' ); ?></a>
 	</p>
 
 	<div class="clear"></div>

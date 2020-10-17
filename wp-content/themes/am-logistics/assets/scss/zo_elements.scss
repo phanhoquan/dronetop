@@ -500,6 +500,11 @@ div#zo-page-element-wrap {
   clear: both !important;
 }
 
+#zo-footer {
+  border-top: 0 !important;
+  box-shadow: 1px 1px 15px 0px #888;
+}
+
 @include breakpoint-max(768px) {
   #zo-footer #zo-footer-content .zo-footer-column {
     padding-left: 0;
@@ -557,7 +562,8 @@ option {
   display: none !important;
 }
 
-body.woocommerce-edit-account {
+body.woocommerce-edit-account,
+body.user-registration-page.woocommerce-account {
   .woocommerce {
     margin-bottom: 40px;
   }
@@ -589,7 +595,8 @@ div.wpcf7 .ajax-loader {
   &.woocommerce-MyAccount-navigation-link--orders,
   &.woocommerce-MyAccount-navigation-link--downloads,
   &.woocommerce-MyAccount-navigation-link--edit-address,
-  &.woocommerce-MyAccount-navigation-link--customer-logout {
+  &.woocommerce-MyAccount-navigation-link--customer-logout,
+  &.woocommerce-MyAccount-navigation-link--dashboard {
     display: none !important;
   }
 }
@@ -662,8 +669,43 @@ a.btn.btn-logout {
   }
 }
 
-#colorbox.yith_woocompare_colorbox {
+.ovl-hide {
   @include breakpoint-min(992px) {
-    position: fixed !important;
+    overflow: hidden;
+  }
+}
+
+
+
+.images {
+
+  .yith_magnifier_zoom_wrap,
+  .woocommerce-main-image {
+    height: 300px !important;
+
+    img {
+      height: 100% !important;
+    }
+  }
+
+  @include breakpoint-max(992px) {
+
+    .yith_magnifier_zoom_wrap,
+    .woocommerce-main-image {
+      height: 250px !important;
+
+      img {
+        height: 100% !important;
+      }
+    }
+  }
+}
+
+.image-avatar {
+  margin-bottom: 20px;
+  text-align: center;
+
+  img {
+    border-radius: 50%;
   }
 }
