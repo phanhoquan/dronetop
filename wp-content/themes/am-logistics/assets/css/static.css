@@ -7296,8 +7296,7 @@ a.btn.btn-logout {
   #wpb_wiz_gallery .slick-arrow {
     left: 5px;
     z-index: 99;
-    background-color: #000;
-    margin-top: -15px; }
+    background-color: #000; }
   #wpb_wiz_gallery .slick-arrow::before {
     opacity: 1;
     line-height: 19px;
@@ -7359,6 +7358,12 @@ a.btn.btn-logout {
   top: 10px;
   position: relative;
   display: none; }
+
+.zo-footer-column .widget.widget_text .textwidget {
+  text-align: justify; }
+  @media screen and (min-width: 992px) {
+  .zo-footer-column #nav_menu-2 {
+    margin-left: 30px; } }
 
 .zo-grid-filter .zo-filter-category {
   margin: 0 0 30px;

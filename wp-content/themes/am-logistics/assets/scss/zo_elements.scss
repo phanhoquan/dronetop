@@ -879,3 +879,17 @@ a.btn.btn-logout {
   position: relative;
   display: none;
 }
+
+.zo-footer-column {
+  .widget.widget_text {
+    .textwidget {
+      text-align: justify;
+    }
+  }
+
+  @include breakpoint-min(992px) {
+    #nav_menu-2 {
+      margin-left: 30px;
+    }
+  }
+}
