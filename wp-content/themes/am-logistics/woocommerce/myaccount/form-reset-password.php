@@ -24,7 +24,7 @@ wc_print_notices(); ?>
 
 <form method="post" class="woocommerce-ResetPassword lost_reset_password">
 
-	<p><?php echo apply_filters( 'woocommerce_reset_password_message', __( 'Enter a new password below.', 'am-logistics' ) ); ?></p>
+	<p><?php echo apply_filters( 'woocommerce_reset_password_message', __( 'Please enter your new password!', 'am-logistics' ) ); ?></p>
 
 	<p class="woocommerce-form-row woocommerce-form-row--first form-row form-row-first">
 		<label for="password_1"><?php _e( 'New password', 'am-logistics' ); ?> <span class="required">*</span></label>

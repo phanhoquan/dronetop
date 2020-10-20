@@ -7365,6 +7365,12 @@ a.btn.btn-logout {
   .zo-footer-column #nav_menu-2 {
     margin-left: 30px; } }
 
+.text-justify {
+  text-align: justify !important; }
+
+.mb-40 {
+  margin-bottom: 40px; }
+
 .zo-grid-filter .zo-filter-category {
   margin: 0 0 30px;
   padding: 0;
@@ -7824,8 +7830,9 @@ div.product-menu {
   .customer-review .slick-arrow.slick-prev, .product-menu .slick-arrow.slick-prev {
     right: 60px; }
 
-.customer-review .slick-arrow {
-  top: -27px; }
+.customer-review button.slick-arrow {
+  top: -27px;
+  border-color: #6c6b6b; }
 
 .view-all {
   text-align: center;

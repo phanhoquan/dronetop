@@ -24,7 +24,7 @@ wc_print_notices(); ?>
 
 <form method="post" class="woocommerce-ResetPassword lost_reset_password">
 
-	<p><?php echo apply_filters( 'woocommerce_lost_password_message', __( 'Forgot password? Please enter your username or email address. You will receive a link to create a new password via email.', 'am-logistics' ) ); ?></p>
+	<p class="text-justify"><?php echo apply_filters( 'woocommerce_lost_password_message', __( 'Forgot password? Please enter your username or email address. You will receive a link to create a new password via email.', 'am-logistics' ) ); ?></p>
 
 	<p class="woocommerce-form-row woocommerce-form-row--first form-row form-row-first">
 		<label for="user_login"><?php _e( 'Username or email', 'am-logistics' ); ?></label>

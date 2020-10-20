@@ -31,14 +31,21 @@ get_header();
 ?>
 
 <div class="<?php echo esc_attr($settings['blog_layout_width']);?>">
+    <div class="header-title-product top-0 mb-40">
+        <h3>
+            <?php esc_html_e('NEWS', 'am-logistics');?>
+        </h3>
+    </div>
     <div class="row">
+        
     <?php if($settings['blog_layout_sidebar'] == 'left'){?>
             <div class="zo-sidebar-col col-xs-12 col-sm-<?php echo esc_attr($sidebar_size);?> col-md-<?php echo esc_attr($sidebar_size);?> col-lg-<?php echo esc_attr($sidebar_size);?>">
                 <?php get_sidebar(); ?>
             </div>
         <?php }?>
         <div id="zo-content" class="blog-news col-xs-12 col-sm-<?php echo esc_attr($content_size);?> col-md-<?php echo esc_attr($content_size);?> col-lg-<?php echo esc_attr($content_size);?>">
-            <div id="content" role="main">
+           
+        <div id="content" role="main">
                 <?php if ( have_posts() ) : ?>
                     <?php get_template_part( 'blog-templates/blog', $settings['blog_layout'] ); ?>
                 <?php else : ?>

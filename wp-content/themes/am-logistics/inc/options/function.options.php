@@ -1730,7 +1730,7 @@ $this->sections[] = array(
             'title' => esc_html__('Copyright Text', 'am-logistics'),
             'subtitle' => esc_html__('Enter the text that displays in the copyright bar. HTML markup can be used.', 'am-logistics'),
             'validate' => 'html_custom',
-            'default' => '©Copyright <script>document.write(new Date().getFullYear());</script>   |   DroneTop1, Made by <a href="https://dronetop1.com" target="_blank"> DroneTop1</a>   |   All Rights Reserved.',
+            'default' => '©Copyright <script>document.write(new Date().getFullYear());</script>   |   DroneTop1!, Made by <a href="https://dronetop1.com" target="_blank"> DroneTop1!</a>   |   All Rights Reserved.',
             'allowed_html' => array(
                 'a' => array(
                     'href' => array(),
