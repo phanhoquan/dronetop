@@ -7371,6 +7371,14 @@ a.btn.btn-logout {
 .mb-40 {
   margin-bottom: 40px; }
 
+.woocommerce-form-login.login .form-row .woocommerce-form__label-for-checkbox {
+  float: right;
+  margin-top: 0;
+  position: relative;
+  top: 8px; }
+  .woocommerce-form-login.login .woocommerce-LostPassword.lost_password a {
+    padding-left: 3px; }
+
 .zo-grid-filter .zo-filter-category {
   margin: 0 0 30px;
   padding: 0;
