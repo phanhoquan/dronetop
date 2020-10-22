@@ -121,3 +121,9 @@
   display: none !important;
 }
 
+.wpb-wiz-discount-notice,#setting-error-am-logistics,.notice-info,#message.updated.woocommerce-message {
+  display: none !important;
+}
+p{
+  line-break: anywhere !important;
+}

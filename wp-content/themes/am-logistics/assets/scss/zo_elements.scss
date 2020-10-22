@@ -251,15 +251,19 @@ div#zo-page-element-wrap {
 
 .navigation .pagination {
   a {
+    border-color: #6c6b6b;
+
     &:hover {
-      background-color: $secondary-color !important;
+      background-color: $primary-color !important;
       color: #fff;
+      border-color: $primary-color;
     }
   }
 
   span.current {
-    background-color: $secondary-color !important;
+    background-color: $primary-color !important;
     color: #fff;
+    border-color: $primary-color;
   }
 }
 
@@ -894,7 +898,8 @@ a.btn.btn-logout {
   }
 }
 
-.text-justify {
+.text-justify,
+.woocommerce-error {
   text-align: justify !important;
 }
 

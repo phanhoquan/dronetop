@@ -6965,12 +6965,16 @@ div#zo-page-element-wrap {
 .woocommerce .star-rating {
   color: #d10024; }
 
-.navigation .pagination a:hover {
-  background-color: #000 !important;
-  color: #fff; }
+.navigation .pagination a {
+  border-color: #6c6b6b; }
+  .navigation .pagination a:hover {
+    background-color: #d10024 !important;
+    color: #fff;
+    border-color: #d10024; }
   .navigation .pagination span.current {
-    background-color: #000 !important;
-    color: #fff; }
+    background-color: #d10024 !important;
+    color: #fff;
+    border-color: #d10024; }
 
 .zo-blog-detail .zo-blog-link {
   margin-top: 0 !important; }
@@ -7365,7 +7369,7 @@ a.btn.btn-logout {
   .zo-footer-column #nav_menu-2 {
     margin-left: 30px; } }
 
-.text-justify {
+.text-justify, .woocommerce-error {
   text-align: justify !important; }
 
 .mb-40 {
@@ -7826,10 +7830,10 @@ div.product-menu {
     width: 40px;
     background-color: transparent;
     height: 30px;
-    border: 1px solid #d10024; }
+    border: 1px solid #6c6b6b; }
   .customer-review .slick-arrow:hover, .product-menu .slick-arrow:hover {
-    border: 1px solid #000;
-    background-color: #000; }
+    border: 1px solid #d10024;
+    background-color: #d10024; }
   .customer-review .slick-arrow:hover::before, .product-menu .slick-arrow:hover::before {
     color: #fff; }
   .customer-review .slick-arrow::before, .product-menu .slick-arrow::before {
@@ -7847,12 +7851,14 @@ div.product-menu {
   margin: 30px auto; }
   .view-all a {
     border: 1px solid;
+    border-color: #6c6b6b;
     padding: 10px 20px;
     border-radius: 2px;
     text-transform: uppercase; }
   .view-all a:hover {
     color: #fff;
-    background-color: #d10024; }
+    background-color: #d10024;
+    border-color: #d10024; }
 
 .list-category a {
   padding-right: 3px;
@@ -7869,7 +7875,8 @@ div.product-menu {
 
 .woocommerce .main-content .woocommerce-ordering select {
   border-color: #6c6b6b;
-  outline: none; }
+  outline: none;
+  color: #d10024; }
 
 .template-zo_button .zo-button {
   font-size: 14px;
