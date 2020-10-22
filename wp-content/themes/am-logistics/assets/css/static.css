@@ -7383,6 +7383,9 @@ a.btn.btn-logout {
   .woocommerce-form-login.login .woocommerce-LostPassword.lost_password a {
     padding-left: 3px; }
 
+body p {
+  line-break: anywhere !important; }
+
 .zo-grid-filter .zo-filter-category {
   margin: 0 0 30px;
   padding: 0;
