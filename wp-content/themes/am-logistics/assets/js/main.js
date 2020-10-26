@@ -245,7 +245,17 @@ jQuery(document).ready(function ($) {
   $("button.toggle_seach").click(function () {
     $(".dgwt-wcas-search-wrapp").toggleClass("form-open");
     $("body").toggleClass("form-search-open");
+    $("body").append('<div class="ovl-search"> </div>');
   });
+
+    // //hide it when clicking anywhere else except the popup and the trigger
+    $(document).on('click touch', function(event) {
+       $(".ovl-search").click(function () {
+          $(".dgwt-wcas-search-wrapp").removeClass("form-open");
+          $("body").removeClass("form-search-open");
+          $(".ovl-search").remove();
+        });
+    });
 
   $("body.logged-in").each(function () {
     $(
@@ -386,4 +396,5 @@ jQuery(document).ready(function ($) {
       }
     }, 1000);
   });
+ 
 });

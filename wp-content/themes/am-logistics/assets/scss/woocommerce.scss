@@ -2,6 +2,25 @@
     .summary.entry-summary {
         position: relative;
     }
+    .main-single-content .entry-summary a.compare.button{
+        font-size: 18px;
+        width: 150px;
+        height: 48px;
+        padding: 10px;
+        background-color: $secondary-color;
+        color: #fff;
+        text-transform: uppercase;
+        line-height: 30px;
+        bottom: 0;
+        font-weight: 400;
+        border-radius: 3px !important;
+        &:before, &:after{
+            display:none !important
+        }
+        &:hover{
+             background-color: $primary-color;
+        }
+    }
 }
 
 .widget_product_categories {

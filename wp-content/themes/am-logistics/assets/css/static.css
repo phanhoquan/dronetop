@@ -6640,10 +6640,10 @@ body.zo-dark #page {
           padding-right: 15px; } }
   @media screen and (max-width: 1169px) {
   #zo-header .zo-header-secondary ul.menu-main-menu.nav-menu li a {
-    font-size: 13.5px; } }
+    font-size: 12px; } }
   @media screen and (max-width: 1039px) {
   #zo-header .zo-header-secondary ul.menu-main-menu.nav-menu li a {
-    font-size: 12.5px; } }
+    font-size: 11px; } }
 
 .mobile {
   display: none; }
@@ -7383,8 +7383,16 @@ a.btn.btn-logout {
   .woocommerce-form-login.login .woocommerce-LostPassword.lost_password a {
     padding-left: 3px; }
 
-body p {
+body .comment-text p {
   line-break: anywhere !important; }
+
+.ovl-search {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9; }
 
 .zo-grid-filter .zo-filter-category {
   margin: 0 0 30px;
@@ -7944,6 +7952,22 @@ div.product-menu {
 
 .single-product .summary.entry-summary {
   position: relative; }
+  .single-product .main-single-content .entry-summary a.compare.button {
+    font-size: 18px;
+    width: 150px;
+    height: 48px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 30px;
+    bottom: 0;
+    font-weight: 400;
+    border-radius: 3px !important; }
+  .single-product .main-single-content .entry-summary a.compare.button:before, .single-product .main-single-content .entry-summary a.compare.button:after {
+    display: none !important; }
+  .single-product .main-single-content .entry-summary a.compare.button:hover {
+    background-color: #d10024; }
 
 .widget_product_categories {
   margin-bottom: 30px; }

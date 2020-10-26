@@ -860,7 +860,12 @@ add_filter( 'woocommerce_catalog_orderby', 'options_rename_default_sorting_optio
  
 function options_rename_default_sorting_options( $options ){
     unset( $options[ 'popularity' ] ); // remove
-	$options[ 'post_views' ] = 'Sort by popularity';
+    $options[ 'menu_order' ] = 'Default Sorting';
+    $options[ 'date' ] = ' Sort by Latest';
+    $options[ 'post_views' ] = 'Sort by Popularity';
+    $options[ 'rating' ] = 'Sort by Average Rating';
+    $options[ 'price' ] = 'Sort by Price: Low to High';
+    $options[ 'price-desc' ] = 'Sort by Price: High to Low';
 	return $options;
 }
 
