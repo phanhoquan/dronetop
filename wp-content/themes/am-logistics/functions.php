@@ -658,7 +658,7 @@ if (function_exists('zo_image_resize')) {
         return do_shortcode('<img src="' . esc_url($url) . '" alt="' . get_the_title() . '" />');
     }
 }
-add_filter('use_block_editor_for_post', '__return_false');
+// add_filter('use_block_editor_for_post', '__return_false');
 
 // add_action( 'woocommerce_after_shop_loop_item_title', array( WC_Wishlists_Plugin, 'add_to_wishlist_button' ), 10 );
 if( defined( 'YITH_WCWL' ) && ! function_exists( 'yith_wcwl_add_wishlist_to_loop' ) ){
