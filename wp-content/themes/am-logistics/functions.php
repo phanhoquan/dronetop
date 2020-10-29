@@ -897,3 +897,4 @@ function wc_save_account_details_required_fields( $required_fields ){
     return $required_fields;
 }
 
+// add_filter('site_transient_update_plugins', '__return_false');

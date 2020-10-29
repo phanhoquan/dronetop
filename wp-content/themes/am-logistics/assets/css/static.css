@@ -7394,6 +7394,10 @@ body .comment-text p {
   height: 100%;
   z-index: 9; }
 
+select option:checked, select option:hover {
+  background: #d10024 !important;
+  color: #fff; }
+
 .zo-grid-filter .zo-filter-category {
   margin: 0 0 30px;
   padding: 0;

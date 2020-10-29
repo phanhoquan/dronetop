@@ -929,11 +929,18 @@ body {
     line-break: anywhere !important;
   }
 }
-.ovl-search{
+
+.ovl-search {
   position: fixed;
   top: 0;
   bottom: 0;
   width: 100%;
   height: 100%;
-  z-index:9;
+  z-index: 9;
+}
+
+select option:checked,
+select option:hover {
+  background: $primary-color !important;
+  color: #fff;
 }
