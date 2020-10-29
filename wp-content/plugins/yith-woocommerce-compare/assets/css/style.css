@@ -6,20 +6,21 @@
 FIXED COLUMNS
 ##############*/
 
-table.DTFC_Cloned thead, table.DTFC_Cloned tfoot{
-    background-color:white;
+table.DTFC_Cloned thead, table.DTFC_Cloned tfoot {
+    background-color: white;
 }
-div.DTFC_Blocker{
-    background-color:white;
+
+div.DTFC_Blocker {
+    background-color: white;
 }
-div.DTFC_LeftWrapper table.dataTable,
-div.DTFC_RightWrapper table.dataTable{
-    margin-bottom:0;
-    z-index:2;
+
+div.DTFC_LeftWrapper table.dataTable, div.DTFC_RightWrapper table.dataTable {
+    margin-bottom: 0;
+    z-index: 2;
 }
-div.DTFC_LeftWrapper table.dataTable.no-footer,
-div.DTFC_RightWrapper table.dataTable.no-footer{
-    border-bottom:none;
+
+div.DTFC_LeftWrapper table.dataTable.no-footer, div.DTFC_RightWrapper table.dataTable.no-footer {
+    border-bottom: none;
 }
 
 /*############################
@@ -56,15 +57,12 @@ table.dataTable.compare-list tr {
     display: table-row;
 }
 
-table.dataTable.compare-list thead th,
-table.dataTable.compare-list thead td,
-table.dataTable.compare-list tfoot td,
-table.dataTable.compare-list tfoot th {
+table.dataTable.compare-list thead th, table.dataTable.compare-list thead td, table.dataTable.compare-list tfoot td, table.dataTable.compare-list tfoot th {
     border: 0;
     vertical-align: middle;
 }
-.DTFC_LeftFootWrapper table.compare-list,
-.DTFC_LeftHeadWrapper table.compare-list {
+
+.DTFC_LeftFootWrapper table.compare-list, .DTFC_LeftHeadWrapper table.compare-list {
     border: 0;
 }
 
@@ -101,8 +99,7 @@ table.compare-list tbody th {
     text-align: right;
 }
 
-table.dataTable.compare-list tbody th,
-table.dataTable.compare-list tbody td {
+table.dataTable.compare-list tbody th, table.dataTable.compare-list tbody td {
     border-right: 1px solid #e7e7e7;
     border-top: 1px solid #e7e7e7;
     border-bottom: none;
@@ -110,8 +107,8 @@ table.dataTable.compare-list tbody td {
     padding: 10px;
     vertical-align: middle;
 }
-table.dataTable.compare-list tbody tr:last-child th,
-table.dataTable.compare-list tbody tr:last-child td {
+
+table.dataTable.compare-list tbody tr:last-child th, table.dataTable.compare-list tbody tr:last-child td {
     border-bottom: 1px solid #e7e7e7;
 }
 
@@ -195,10 +192,6 @@ table.compare-list .stock td span.out-of-stock {
     color: #990000;
 }
 
-table.compare-list .price td {
-    text-decoration: underline;
-}
-
 table.compare-list td.odd {
     background: #F7F7F7;
 }
@@ -217,7 +210,7 @@ table.compare-list td img {
     max-width: none;
 }
 
-@media( max-width: 767px ) {
+@media( max-width: 767px) {
     table.compare-list tbody th {
         width: 100px;
         max-width: 100px;
@@ -229,13 +222,16 @@ table.compare-list td img {
 table.compare-list ul {
     text-align: left;
 }
+
 table.compare-list ins {
     text-decoration: none;
 }
+
 table.compare-list ins span.amount {
     color: #d10024;
     font-weight: bold;
 }
+
 table.compare-list .amount {
     color: #000000;
     font-size: 16px;
@@ -244,6 +240,7 @@ table.compare-list .amount {
 table.compare-list del .amount {
     color: #000;
 }
+
 table.compare-list .title td {
     font-size: 16px;
     font-weight: 600;
@@ -251,4 +248,165 @@ table.compare-list .title td {
     font-weight: bold;
     margin-bottom: 0px;
     color: #000;
+}
+
+tfoot {
+    background-color: transparent !important;
+}
+
+table.compare-list ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+table.compare-list tbody tr th, table.compare-list tbody tr td {
+    border-left: 1px solid #e7e7e7 !important;
+}
+
+table.compare-list tbody tr.odd th, table.compare-list tbody tr.odd td {
+    background-color: #fff;
+}
+
+table.compare-list tbody tr.remove td:nth-child(2) {
+    background-color: rgb(38, 168, 58);
+    border-right: 1px solid rgb(38, 168, 58);
+    border-top: 1px solid rgb(38, 168, 58);
+    border-left: 1px solid rgb(38, 168, 58);
+}
+
+table.compare-list tbody tr.image td:nth-child(2), table.compare-list tbody tr.title td:nth-child(2), table.compare-list tbody tr.price td:nth-child(2), table.compare-list tbody tr.description td:nth-child(2), table.compare-list tbody tr.dimensions td:nth-child(2), table.compare-list tbody tr.weight td:nth-child(2) {
+    border-right: 1px solid rgb(38, 168, 58);
+    border-left: 1px solid rgb(38, 168, 58) !important;
+}
+
+table.compare-list tbody tr.dimensions td:nth-child(2) {
+    border-bottom: 1px solid rgb(38, 168, 58) !important;
+}
+
+table.compare-list tbody tr.remove td:nth-child(4) {
+    background-color: rgb(254, 65, 79);
+    border-right: 1px solid rgb(254, 65, 79);
+    border-top: 1px solid rgb(254, 65, 79);
+    border-left: 1px solid rgb(254, 65, 79);
+}
+
+table.compare-list tbody tr.image td:nth-child(4), table.compare-list tbody tr.title td:nth-child(4), table.compare-list tbody tr.price td:nth-child(4), table.compare-list tbody tr.description td:nth-child(4), table.compare-list tbody tr.dimensions td:nth-child(4), table.compare-list tbody tr.weight td:nth-child(4) {
+    border-right: 1px solid rgb(254, 65, 79);
+    border-left: 1px solid rgb(254, 65, 79) !important;
+}
+
+table.compare-list tbody tr.dimensions td:nth-child(4) {
+    border-bottom: 1px solid rgb(254, 65, 79) !important;
+}
+
+table.compare-list tbody tr.remove td:nth-child(6) {
+    background-color: rgb(210, 97, 236);
+    border-right: 1px solid rgb(210, 97, 236);
+    border-top: 1px solid rgb(210, 97, 236);
+    border-left: 1px solid rgb(210, 97, 236);
+}
+
+table.compare-list tbody tr.image td:nth-child(6), table.compare-list tbody tr.title td:nth-child(6), table.compare-list tbody tr.price td:nth-child(6), table.compare-list tbody tr.description td:nth-child(6), table.compare-list tbody tr.dimensions td:nth-child(6), table.compare-list tbody tr.weight td:nth-child(6) {
+    border-right: 1px solid rgb(210, 97, 236);
+    border-left: 1px solid rgb(210, 97, 236) !important;
+}
+
+table.compare-list tbody tr.dimensions td:nth-child(6) {
+    border-bottom: 1px solid rgb(210, 97, 236) !important;
+}
+
+table.compare-list tbody tr.remove td:nth-child(8) {
+    background-color: rgb(219, 226, 20);
+    border-right: 1px solid rgb(219, 226, 20);
+    border-top: 1px solid rgb(219, 226, 20);
+    border-left: 1px solid rgb(219, 226, 20);
+}
+
+table.compare-list tbody tr.image td:nth-child(8), table.compare-list tbody tr.title td:nth-child(8), table.compare-list tbody tr.price td:nth-child(8), table.compare-list tbody tr.description td:nth-child(8), table.compare-list tbody tr.dimensions td:nth-child(8), table.compare-list tbody tr.weight td:nth-child(8) {
+    border-right: 1px solid rgb(219, 226, 20);
+    border-left: 1px solid rgb(219, 226, 20) !important;
+}
+
+table.compare-list tbody tr.dimensions td:nth-child(8) {
+    border-bottom: 1px solid rgb(219, 226, 20) !important;
+}
+
+table.compare-list tbody tr.remove td:nth-child(10) {
+    background-color: rgb(70, 44, 229);
+    border-right: 1px solid rgb(70, 44, 229);
+    border-top: 1px solid rgb(70, 44, 229);
+    border-left: 1px solid rgb(70, 44, 229);
+}
+
+table.compare-list tbody tr.image td:nth-child(10), table.compare-list tbody tr.title td:nth-child(10), table.compare-list tbody tr.price td:nth-child(10), table.compare-list tbody tr.description td:nth-child(10), table.compare-list tbody tr.dimensions td:nth-child(10), table.compare-list tbody tr.weight td:nth-child(10) {
+    border-right: 1px solid rgb(70, 44, 229);
+    border-left: 1px solid rgb(70, 44, 229) !important;
+}
+
+table.compare-list tbody tr.dimensions td:nth-child(10) {
+    border-bottom: 1px solid rgb(70, 44, 229) !important;
+}
+
+table.compare-list tbody tr.remove td:nth-child(12) {
+    background-color: rgb(226, 11, 130);
+    border-right: 1px solid rgb(226, 11, 130);
+    border-top: 1px solid rgb(226, 11, 130);
+    border-left: 1px solid rgb(226, 11, 130);
+}
+
+table.compare-list tbody tr.image td:nth-child(12), table.compare-list tbody tr.title td:nth-child(12), table.compare-list tbody tr.price td:nth-child(12), table.compare-list tbody tr.description td:nth-child(12), table.compare-list tbody tr.dimensions td:nth-child(12), table.compare-list tbody tr.weight td:nth-child(12) {
+    border-right: 1px solid rgb(226, 11, 130);
+    border-left: 1px solid rgb(226, 11, 130) !important;
+}
+
+table.compare-list tbody tr.dimensions td:nth-child(12) {
+    border-bottom: 1px solid rgb(226, 11, 130) !important;
+}
+
+table.compare-list tbody tr.remove td:nth-child(14) {
+    background-color: rgb(44, 253, 97);
+    border-right: 1px solid rgb(44, 253, 97);
+    border-top: 1px solid rgb(44, 253, 97);
+    border-left: 1px solid rgb(44, 253, 97);
+}
+
+table.compare-list tbody tr.image td:nth-child(14), table.compare-list tbody tr.title td:nth-child(14), table.compare-list tbody tr.price td:nth-child(14), table.compare-list tbody tr.description td:nth-child(14), table.compare-list tbody tr.dimensions td:nth-child(14), table.compare-list tbody tr.weight td:nth-child(14) {
+    border-right: 1px solid rgb(44, 253, 97);
+    border-left: 1px solid rgb(44, 253, 97) !important;
+}
+
+table.compare-list tbody tr.dimensions td:nth-child(14) {
+    border-bottom: 1px solid rgb(44, 253, 97) !important;
+}
+
+table.compare-list tbody tr.remove td:nth-child(16) {
+    background-color: rgb(67, 180, 203);
+    border-right: 1px solid rgb(67, 180, 203);
+    border-top: 1px solid rgb(67, 180, 203);
+    border-left: 1px solid rgb(67, 180, 203);
+}
+
+table.compare-list tbody tr.image td:nth-child(16), table.compare-list tbody tr.title td:nth-child(16), table.compare-list tbody tr.price td:nth-child(16), table.compare-list tbody tr.description td:nth-child(16), table.compare-list tbody tr.dimensions td:nth-child(16), table.compare-list tbody tr.weight td:nth-child(16) {
+    border-right: 1px solid rgb(67, 180, 203);
+    border-left: 1px solid rgb(67, 180, 203) !important;
+}
+
+table.compare-list tbody tr.dimensions td:nth-child(16) {
+    border-bottom: 1px solid rgb(67, 180, 203) !important;
+}
+
+table.compare-list tbody tr.remove td.odd a {
+    color: #fff !important;
+}
+
+table.compare-list tbody tr td a {
+    color: #000;
+}
+
+table.compare-list tbody tr td {
+    border: 1px solid rgb(38, 168, 58);
+}
+
+table.compare-list tbody tr.even th {
+    background-color: #f2f2f2;
 }

@@ -141,13 +141,20 @@ $localized_table_text = apply_filters('wpml_translate_single_string', $table_tex
                             switch ($field) {
 
                                 case 'image':
-                                    echo '<div class="image-wrap">' . $product->get_image('yith-woocompare-image')  . '</div>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+                                    echo '<div class="image-wrap">'; ?>
+                                    <a href="<?php the_permalink(); ?>" title="<?php the_title();?>">
+                                   <?php echo $product->get_image('yith-woocompare-image')  . '</div></a>'; 
+                                    // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
                                     break;
 
                                 case 'add-to-cart':
                                     woocommerce_template_loop_add_to_cart();
                                     break;
-
+                                case 'title': ?>
+                                    <a href="<?php the_permalink(); ?>" title="<?php the_title();?>">
+                                    <?php the_title();?></a>
+                                    <?php
+                                    break;
                                 default:
                                     echo empty($product->fields[$field]) ? '&nbsp;' : $product->fields[$field]; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
                                     break;
