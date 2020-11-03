@@ -82,6 +82,8 @@ table.compare-list {
     table-layout: auto;
 }
 
+/*custom-color_*/
+
 table.compare-list tbody th {
     width: 150px;
     max-width: 150px;
@@ -267,36 +269,69 @@ table.compare-list tbody tr.odd th, table.compare-list tbody tr.odd td {
     background-color: #fff;
 }
 
-table.compare-list tbody tr.remove td:nth-child(2) {
-    background-color: rgb(38, 168, 58);
-    border-right: 1px solid rgb(38, 168, 58);
-    border-top: 1px solid rgb(38, 168, 58);
-    border-left: 1px solid rgb(38, 168, 58);
+table.compare-list custom-color_0 {
+   background-color: rgb(38, 168, 58);
 }
 
-table.compare-list tbody tr.image td:nth-child(2), table.compare-list tbody tr.title td:nth-child(2), table.compare-list tbody tr.price td:nth-child(2), table.compare-list tbody tr.description td:nth-child(2), table.compare-list tbody tr.dimensions td:nth-child(2), table.compare-list tbody tr.weight td:nth-child(2) {
-    border-right: 1px solid rgb(38, 168, 58);
-    border-left: 1px solid rgb(38, 168, 58) !important;
-}
-
-table.compare-list tbody tr.dimensions td:nth-child(2) {
-    border-bottom: 1px solid rgb(38, 168, 58) !important;
-}
-
-table.compare-list tbody tr.remove td:nth-child(4) {
+table.compare-list custom-color_2 {
     background-color: rgb(254, 65, 79);
-    border-right: 1px solid rgb(254, 65, 79);
-    border-top: 1px solid rgb(254, 65, 79);
-    border-left: 1px solid rgb(254, 65, 79);
 }
 
-table.compare-list tbody tr.image td:nth-child(4), table.compare-list tbody tr.title td:nth-child(4), table.compare-list tbody tr.price td:nth-child(4), table.compare-list tbody tr.description td:nth-child(4), table.compare-list tbody tr.dimensions td:nth-child(4), table.compare-list tbody tr.weight td:nth-child(4) {
-    border-right: 1px solid rgb(254, 65, 79);
-    border-left: 1px solid rgb(254, 65, 79) !important;
+table.compare-list custom-color_4 {
+    background-color: rgb(210, 97, 236);
 }
 
-table.compare-list tbody tr.dimensions td:nth-child(4) {
-    border-bottom: 1px solid rgb(254, 65, 79) !important;
+table.compare-list custom-color_6 {
+    background-color: rgb(219, 226, 20)
+
+}
+
+table.compare-list custom-color_8 {
+    background-color: rgb(70, 44, 229);
+}
+
+
+table.compare-list tbody tr td:nth-child(2) {
+    background-color: rgb(233, 240, 247);
+}
+
+table.compare-list tbody tr.remove td:nth-child(2) {
+    background-color: rgb(37, 106, 175);
+    border-right: 1px solid rgb(37, 106, 175);
+    border-top: 1px solid rgb(37, 106, 175);
+    border-left: 1px solid rgb(37, 106, 175);
+}
+
+/*table.compare-list tbody tr.image td:nth-child(2), table.compare-list tbody tr.title td:nth-child(2), table.compare-list tbody tr.price td:nth-child(2), table.compare-list tbody tr.description td:nth-child(2), table.compare-list tbody tr.dimensions td:nth-child(2), table.compare-list tbody tr.weight td:nth-child(2) {*/
+/*    border-right: 1px solid rgb(38, 168, 58);*/
+/*    border-left: 1px solid rgb(38, 168, 58) !important;*/
+/*}*/
+
+/*table.compare-list tbody tr.dimensions td:nth-child(2) {*/
+/*    border-bottom: 1px solid rgb(38, 168, 58) !important;*/
+/*}*/
+
+table.compare-list tbody tr td:nth-child(4) {
+    background-color: rgb(233, 248, 245);
+}
+table.compare-list tbody tr.remove td:nth-child(4) {
+    background-color: rgb(45, 188, 156);
+    border-right: 1px solid rgb(45, 188, 156);
+    border-top: 1px solid rgb(45, 188, 156);
+    border-left: 1px solid rgb(45, 188, 156);
+}
+
+/*table.compare-list tbody tr.image td:nth-child(4), table.compare-list tbody tr.title td:nth-child(4), table.compare-list tbody tr.price td:nth-child(4), table.compare-list tbody tr.description td:nth-child(4), table.compare-list tbody tr.dimensions td:nth-child(4), table.compare-list tbody tr.weight td:nth-child(4) {*/
+/*    border-right: 1px solid rgb(254, 65, 79);*/
+/*    border-left: 1px solid rgb(254, 65, 79) !important;*/
+/*}*/
+
+/*table.compare-list tbody tr.dimensions td:nth-child(4) {*/
+/*    border-bottom: 1px solid rgb(254, 65, 79) !important;*/
+/*}*/
+
+table.compare-list tbody tr td:nth-child(6) {
+    background-color: rgb(250, 240, 252);
 }
 
 table.compare-list tbody tr.remove td:nth-child(6) {
@@ -306,13 +341,17 @@ table.compare-list tbody tr.remove td:nth-child(6) {
     border-left: 1px solid rgb(210, 97, 236);
 }
 
-table.compare-list tbody tr.image td:nth-child(6), table.compare-list tbody tr.title td:nth-child(6), table.compare-list tbody tr.price td:nth-child(6), table.compare-list tbody tr.description td:nth-child(6), table.compare-list tbody tr.dimensions td:nth-child(6), table.compare-list tbody tr.weight td:nth-child(6) {
-    border-right: 1px solid rgb(210, 97, 236);
-    border-left: 1px solid rgb(210, 97, 236) !important;
-}
+/*table.compare-list tbody tr.image td:nth-child(6), table.compare-list tbody tr.title td:nth-child(6), table.compare-list tbody tr.price td:nth-child(6), table.compare-list tbody tr.description td:nth-child(6), table.compare-list tbody tr.dimensions td:nth-child(6), table.compare-list tbody tr.weight td:nth-child(6) {*/
+/*    border-right: 1px solid rgb(210, 97, 236);*/
+/*    border-left: 1px solid rgb(210, 97, 236) !important;*/
+/*}*/
 
-table.compare-list tbody tr.dimensions td:nth-child(6) {
-    border-bottom: 1px solid rgb(210, 97, 236) !important;
+/*table.compare-list tbody tr.dimensions td:nth-child(6) {*/
+/*    border-bottom: 1px solid rgb(210, 97, 236) !important;*/
+/*}*/
+
+table.compare-list tbody tr td:nth-child(8) {
+    background-color: rgb(244, 245, 223);
 }
 
 table.compare-list tbody tr.remove td:nth-child(8) {
@@ -322,13 +361,17 @@ table.compare-list tbody tr.remove td:nth-child(8) {
     border-left: 1px solid rgb(219, 226, 20);
 }
 
-table.compare-list tbody tr.image td:nth-child(8), table.compare-list tbody tr.title td:nth-child(8), table.compare-list tbody tr.price td:nth-child(8), table.compare-list tbody tr.description td:nth-child(8), table.compare-list tbody tr.dimensions td:nth-child(8), table.compare-list tbody tr.weight td:nth-child(8) {
-    border-right: 1px solid rgb(219, 226, 20);
-    border-left: 1px solid rgb(219, 226, 20) !important;
-}
+/*table.compare-list tbody tr.image td:nth-child(8), table.compare-list tbody tr.title td:nth-child(8), table.compare-list tbody tr.price td:nth-child(8), table.compare-list tbody tr.description td:nth-child(8), table.compare-list tbody tr.dimensions td:nth-child(8), table.compare-list tbody tr.weight td:nth-child(8) {*/
+/*    border-right: 1px solid rgb(219, 226, 20);*/
+/*    border-left: 1px solid rgb(219, 226, 20) !important;*/
+/*}*/
 
-table.compare-list tbody tr.dimensions td:nth-child(8) {
-    border-bottom: 1px solid rgb(219, 226, 20) !important;
+/*table.compare-list tbody tr.dimensions td:nth-child(8) {*/
+/*    border-bottom: 1px solid rgb(219, 226, 20) !important;*/
+/*}*/
+
+table.compare-list tbody tr td:nth-child(10) {
+    background-color: rgb(244, 242, 252);
 }
 
 table.compare-list tbody tr.remove td:nth-child(10) {
@@ -338,13 +381,17 @@ table.compare-list tbody tr.remove td:nth-child(10) {
     border-left: 1px solid rgb(70, 44, 229);
 }
 
-table.compare-list tbody tr.image td:nth-child(10), table.compare-list tbody tr.title td:nth-child(10), table.compare-list tbody tr.price td:nth-child(10), table.compare-list tbody tr.description td:nth-child(10), table.compare-list tbody tr.dimensions td:nth-child(10), table.compare-list tbody tr.weight td:nth-child(10) {
-    border-right: 1px solid rgb(70, 44, 229);
-    border-left: 1px solid rgb(70, 44, 229) !important;
-}
+/*table.compare-list tbody tr.image td:nth-child(10), table.compare-list tbody tr.title td:nth-child(10), table.compare-list tbody tr.price td:nth-child(10), table.compare-list tbody tr.description td:nth-child(10), table.compare-list tbody tr.dimensions td:nth-child(10), table.compare-list tbody tr.weight td:nth-child(10) {*/
+/*    border-right: 1px solid rgb(70, 44, 229);*/
+/*    border-left: 1px solid rgb(70, 44, 229) !important;*/
+/*}*/
 
-table.compare-list tbody tr.dimensions td:nth-child(10) {
-    border-bottom: 1px solid rgb(70, 44, 229) !important;
+/*table.compare-list tbody tr.dimensions td:nth-child(10) {*/
+/*    border-bottom: 1px solid rgb(70, 44, 229) !important;*/
+/*}*/
+
+table.compare-list tbody tr td:nth-child(12) {
+    background-color: rgb(250, 225, 239);
 }
 
 table.compare-list tbody tr.remove td:nth-child(12) {
@@ -354,46 +401,46 @@ table.compare-list tbody tr.remove td:nth-child(12) {
     border-left: 1px solid rgb(226, 11, 130);
 }
 
-table.compare-list tbody tr.image td:nth-child(12), table.compare-list tbody tr.title td:nth-child(12), table.compare-list tbody tr.price td:nth-child(12), table.compare-list tbody tr.description td:nth-child(12), table.compare-list tbody tr.dimensions td:nth-child(12), table.compare-list tbody tr.weight td:nth-child(12) {
-    border-right: 1px solid rgb(226, 11, 130);
-    border-left: 1px solid rgb(226, 11, 130) !important;
-}
+/*table.compare-list tbody tr.image td:nth-child(12), table.compare-list tbody tr.title td:nth-child(12), table.compare-list tbody tr.price td:nth-child(12), table.compare-list tbody tr.description td:nth-child(12), table.compare-list tbody tr.dimensions td:nth-child(12), table.compare-list tbody tr.weight td:nth-child(12) {*/
+/*    border-right: 1px solid rgb(226, 11, 130);*/
+/*    border-left: 1px solid rgb(226, 11, 130) !important;*/
+/*}*/
 
-table.compare-list tbody tr.dimensions td:nth-child(12) {
-    border-bottom: 1px solid rgb(226, 11, 130) !important;
-}
+/*table.compare-list tbody tr.dimensions td:nth-child(12) {*/
+/*    border-bottom: 1px solid rgb(226, 11, 130) !important;*/
+/*}*/
 
-table.compare-list tbody tr.remove td:nth-child(14) {
-    background-color: rgb(44, 253, 97);
-    border-right: 1px solid rgb(44, 253, 97);
-    border-top: 1px solid rgb(44, 253, 97);
-    border-left: 1px solid rgb(44, 253, 97);
-}
+/*table.compare-list tbody tr.remove td:nth-child(14) {*/
+/*    background-color: rgb(44, 253, 97);*/
+/*    border-right: 1px solid rgb(44, 253, 97);*/
+/*    border-top: 1px solid rgb(44, 253, 97);*/
+/*    border-left: 1px solid rgb(44, 253, 97);*/
+/*}*/
 
-table.compare-list tbody tr.image td:nth-child(14), table.compare-list tbody tr.title td:nth-child(14), table.compare-list tbody tr.price td:nth-child(14), table.compare-list tbody tr.description td:nth-child(14), table.compare-list tbody tr.dimensions td:nth-child(14), table.compare-list tbody tr.weight td:nth-child(14) {
-    border-right: 1px solid rgb(44, 253, 97);
-    border-left: 1px solid rgb(44, 253, 97) !important;
-}
+/*table.compare-list tbody tr.image td:nth-child(14), table.compare-list tbody tr.title td:nth-child(14), table.compare-list tbody tr.price td:nth-child(14), table.compare-list tbody tr.description td:nth-child(14), table.compare-list tbody tr.dimensions td:nth-child(14), table.compare-list tbody tr.weight td:nth-child(14) {*/
+/*    border-right: 1px solid rgb(44, 253, 97);*/
+/*    border-left: 1px solid rgb(44, 253, 97) !important;*/
+/*}*/
 
-table.compare-list tbody tr.dimensions td:nth-child(14) {
-    border-bottom: 1px solid rgb(44, 253, 97) !important;
-}
+/*table.compare-list tbody tr.dimensions td:nth-child(14) {*/
+/*    border-bottom: 1px solid rgb(44, 253, 97) !important;*/
+/*}*/
 
-table.compare-list tbody tr.remove td:nth-child(16) {
-    background-color: rgb(67, 180, 203);
-    border-right: 1px solid rgb(67, 180, 203);
-    border-top: 1px solid rgb(67, 180, 203);
-    border-left: 1px solid rgb(67, 180, 203);
-}
+/*table.compare-list tbody tr.remove td:nth-child(16) {*/
+/*    background-color: rgb(67, 180, 203);*/
+/*    border-right: 1px solid rgb(67, 180, 203);*/
+/*    border-top: 1px solid rgb(67, 180, 203);*/
+/*    border-left: 1px solid rgb(67, 180, 203);*/
+/*}*/
 
-table.compare-list tbody tr.image td:nth-child(16), table.compare-list tbody tr.title td:nth-child(16), table.compare-list tbody tr.price td:nth-child(16), table.compare-list tbody tr.description td:nth-child(16), table.compare-list tbody tr.dimensions td:nth-child(16), table.compare-list tbody tr.weight td:nth-child(16) {
-    border-right: 1px solid rgb(67, 180, 203);
-    border-left: 1px solid rgb(67, 180, 203) !important;
-}
+/*table.compare-list tbody tr.image td:nth-child(16), table.compare-list tbody tr.title td:nth-child(16), table.compare-list tbody tr.price td:nth-child(16), table.compare-list tbody tr.description td:nth-child(16), table.compare-list tbody tr.dimensions td:nth-child(16), table.compare-list tbody tr.weight td:nth-child(16) {*/
+/*    border-right: 1px solid rgb(67, 180, 203);*/
+/*    border-left: 1px solid rgb(67, 180, 203) !important;*/
+/*}*/
 
-table.compare-list tbody tr.dimensions td:nth-child(16) {
-    border-bottom: 1px solid rgb(67, 180, 203) !important;
-}
+/*table.compare-list tbody tr.dimensions td:nth-child(16) {*/
+/*    border-bottom: 1px solid rgb(67, 180, 203) !important;*/
+/*}*/
 
 table.compare-list tbody tr.remove td.odd a {
     color: #fff !important;
@@ -403,9 +450,9 @@ table.compare-list tbody tr td a {
     color: #000;
 }
 
-table.compare-list tbody tr td {
-    border: 1px solid rgb(38, 168, 58);
-}
+/*table.compare-list tbody tr td {*/
+/*    border: 1px solid rgb(38, 168, 58);*/
+/*}*/
 
 table.compare-list tbody tr.even th {
     background-color: #f2f2f2;
