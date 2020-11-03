@@ -269,28 +269,6 @@ table.compare-list tbody tr.odd th, table.compare-list tbody tr.odd td {
     background-color: #fff;
 }
 
-table.compare-list custom-color_0 {
-   background-color: rgb(38, 168, 58);
-}
-
-table.compare-list custom-color_2 {
-    background-color: rgb(254, 65, 79);
-}
-
-table.compare-list custom-color_4 {
-    background-color: rgb(210, 97, 236);
-}
-
-table.compare-list custom-color_6 {
-    background-color: rgb(219, 226, 20)
-
-}
-
-table.compare-list custom-color_8 {
-    background-color: rgb(70, 44, 229);
-}
-
-
 table.compare-list tbody tr td:nth-child(2) {
     background-color: rgb(233, 240, 247);
 }
@@ -450,9 +428,9 @@ table.compare-list tbody tr td a {
     color: #000;
 }
 
-/*table.compare-list tbody tr td {*/
-/*    border: 1px solid rgb(38, 168, 58);*/
-/*}*/
+table.compare-list tbody tr td {
+    border: 1px solid rgb(38, 168, 58);
+}
 
 table.compare-list tbody tr.even th {
     background-color: #f2f2f2;
