@@ -311,6 +311,15 @@ jQuery(document).ready(function($) {
 
 
     // ##### NAV CATEGORIES ######
+    $(document).on( 'click', '#cboxClose', function (ev) {
+        setTimeout(function(){ location.reload(); }, 2000);
+
+
+    });
+
+    $(document).on( 'click', '#cboxOverlay', function (ev) {
+        setTimeout(function(){ location.reload(); }, 2000);
+    });
 
     $(document).on( 'click', '#yith-woocompare-cat-nav li > a', function(ev){
         ev.preventDefault();
