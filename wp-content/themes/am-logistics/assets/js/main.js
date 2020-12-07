@@ -302,7 +302,9 @@ jQuery(document).ready(function ($) {
   });
 
   $("#cboxOverlay, button#cboxClose, #cboxContent").click(function () {
+    window.location.reload(true);
     $("body").removeClass("ovl-hide");
+
   });
 
   $(".product-menu")
