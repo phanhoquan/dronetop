@@ -1,0 +1,9 @@
+02-12-2015 - v1.1.0
+    - Add Zo Video Shortcode
+07-10-2015 - v1.0.2
+    - Fix Masonry spacing
+07-10-2015 - v1.0.1
+	- Add new font icons for Single Fancybox
+	- Add Single Counter Shortcode
+03-10-2015 - v1.0.0
+	- Release CMS theme
